@@ -1,0 +1,170 @@
+11-07 10:24:24.249 [ INFO] [                  c.c.a.d.AppUserDaoTest: 50] - Starting AppUserDaoTest on DESKTOP-4J1ON82 with PID 13252 (started by ChrisYoung in D:\JavaProject\appserver)
+11-07 10:24:24.251 [ INFO] [                  c.c.a.d.AppUserDaoTest:675] - No active profile set, falling back to default profiles: default
+11-07 10:24:26.320 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ebf37d46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:24:26.549 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$6b73ca78] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:24:28.359 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+11-07 10:24:28.809 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
+11-07 10:24:29.452 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+11-07 10:24:29.454 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+11-07 10:24:51.684 [ INFO] [                  c.c.a.d.AppUserDaoTest: 50] - Starting AppUserDaoTest on DESKTOP-4J1ON82 with PID 20420 (started by ChrisYoung in D:\JavaProject\appserver)
+11-07 10:24:51.685 [ INFO] [                  c.c.a.d.AppUserDaoTest:675] - No active profile set, falling back to default profiles: default
+11-07 10:24:53.829 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4138b2f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:24:54.054 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$c0b90028] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:24:55.946 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+11-07 10:24:56.318 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
+11-07 10:24:56.775 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+11-07 10:24:56.777 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+11-07 10:25:57.188 [ INFO] [                  c.c.a.d.AppUserDaoTest: 50] - Starting AppUserDaoTest on DESKTOP-4J1ON82 with PID 13524 (started by ChrisYoung in D:\JavaProject\appserver)
+11-07 10:25:57.188 [ INFO] [                  c.c.a.d.AppUserDaoTest:675] - No active profile set, falling back to default profiles: default
+11-07 10:25:59.174 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2b259e4d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:25:59.338 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$aaa5eb7f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:26:01.404 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+11-07 10:26:01.899 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
+11-07 10:26:02.358 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+11-07 10:26:02.360 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+11-07 10:36:18.681 [ INFO] [                  c.c.a.d.AppUserDaoTest: 50] - Starting AppUserDaoTest on DESKTOP-4J1ON82 with PID 9444 (started by ChrisYoung in D:\JavaProject\appserver)
+11-07 10:36:18.683 [ INFO] [                  c.c.a.d.AppUserDaoTest:675] - No active profile set, falling back to default profiles: default
+11-07 10:36:20.285 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1a6b0a36] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:36:20.552 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$99eb5768] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:36:22.296 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+11-07 10:36:22.773 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
+11-07 10:36:23.221 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+11-07 10:36:23.223 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+11-07 10:38:47.228 [ INFO] [                  c.c.a.d.AppUserDaoTest: 50] - Starting AppUserDaoTest on DESKTOP-4J1ON82 with PID 13308 (started by ChrisYoung in D:\JavaProject\appserver)
+11-07 10:38:47.229 [ INFO] [                  c.c.a.d.AppUserDaoTest:675] - No active profile set, falling back to default profiles: default
+11-07 10:38:49.193 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1a6b0a36] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:38:49.376 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$99eb5768] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:38:51.496 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+11-07 10:38:51.936 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
+11-07 10:38:52.280 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+11-07 10:38:52.285 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+11-07 10:39:47.447 [ INFO] [                  c.c.a.d.AppUserDaoTest: 50] - Starting AppUserDaoTest on DESKTOP-4J1ON82 with PID 15596 (started by ChrisYoung in D:\JavaProject\appserver)
+11-07 10:39:47.448 [ INFO] [                  c.c.a.d.AppUserDaoTest:675] - No active profile set, falling back to default profiles: default
+11-07 10:39:49.359 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6a237d8f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:39:49.550 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$e9a3cac1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:39:52.172 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+11-07 10:39:52.565 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
+11-07 10:39:53.012 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+11-07 10:39:53.722 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 80] - Context refreshed
+11-07 10:39:53.759 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 83] - Found {0} custom documentation plugin(s)
+11-07 10:39:53.778 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 53] - Scanning for api listing references
+11-07 10:39:53.806 [ INFO] [                  c.c.a.d.AppUserDaoTest: 59] - Started AppUserDaoTest in 6.834 seconds (JVM running for 8.69)
+11-07 10:39:55.043 [ INFO] [                 c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+11-07 10:39:55.045 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+11-07 10:42:52.100 [ INFO] [                  c.c.a.d.AppUserDaoTest: 50] - Starting AppUserDaoTest on DESKTOP-4J1ON82 with PID 4672 (started by ChrisYoung in D:\JavaProject\appserver)
+11-07 10:42:52.104 [ INFO] [                  c.c.a.d.AppUserDaoTest:675] - No active profile set, falling back to default profiles: default
+11-07 10:42:54.295 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fe5a5e67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:42:54.491 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$7ddaab99] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:42:56.566 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+11-07 10:42:57.240 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
+11-07 10:42:57.718 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+11-07 10:42:58.393 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 80] - Context refreshed
+11-07 10:42:58.428 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 83] - Found {0} custom documentation plugin(s)
+11-07 10:42:58.441 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 53] - Scanning for api listing references
+11-07 10:42:58.466 [ INFO] [                  c.c.a.d.AppUserDaoTest: 59] - Started AppUserDaoTest in 6.906 seconds (JVM running for 8.673)
+11-07 10:42:59.381 [ INFO] [                 c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+11-07 10:42:59.382 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+11-07 10:45:47.575 [ INFO] [                  c.c.a.d.AppUserDaoTest: 50] - Starting AppUserDaoTest on DESKTOP-4J1ON82 with PID 10616 (started by ChrisYoung in D:\JavaProject\appserver)
+11-07 10:45:47.576 [ INFO] [                  c.c.a.d.AppUserDaoTest:675] - No active profile set, falling back to default profiles: default
+11-07 10:45:49.810 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fc6e61a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:45:50.020 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$7beeaedb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:45:52.112 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+11-07 10:45:52.576 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
+11-07 10:45:53.068 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+11-07 10:45:53.761 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 80] - Context refreshed
+11-07 10:45:53.797 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 83] - Found {0} custom documentation plugin(s)
+11-07 10:45:53.812 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 53] - Scanning for api listing references
+11-07 10:45:53.839 [ INFO] [                  c.c.a.d.AppUserDaoTest: 59] - Started AppUserDaoTest in 6.735 seconds (JVM running for 8.604)
+11-07 10:45:54.716 [ INFO] [                 c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+11-07 10:45:54.717 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+11-07 10:48:11.267 [ INFO] [                  c.c.a.d.AppUserDaoTest: 50] - Starting AppUserDaoTest on DESKTOP-4J1ON82 with PID 12568 (started by ChrisYoung in D:\JavaProject\appserver)
+11-07 10:48:11.269 [ INFO] [                  c.c.a.d.AppUserDaoTest:675] - No active profile set, falling back to default profiles: default
+11-07 10:48:13.353 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5b953b21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:48:13.581 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$db158853] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:48:15.638 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+11-07 10:48:16.158 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
+11-07 10:48:16.652 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+11-07 10:48:17.346 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 80] - Context refreshed
+11-07 10:48:17.382 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 83] - Found {0} custom documentation plugin(s)
+11-07 10:48:17.401 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 53] - Scanning for api listing references
+11-07 10:48:17.431 [ INFO] [                  c.c.a.d.AppUserDaoTest: 59] - Started AppUserDaoTest in 6.589 seconds (JVM running for 8.281)
+11-07 10:48:18.259 [ INFO] [                 c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+11-07 10:48:18.260 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+11-07 10:49:02.601 [ INFO] [                  c.c.a.d.AppUserDaoTest: 50] - Starting AppUserDaoTest on DESKTOP-4J1ON82 with PID 16416 (started by ChrisYoung in D:\JavaProject\appserver)
+11-07 10:49:02.605 [ INFO] [                  c.c.a.d.AppUserDaoTest:675] - No active profile set, falling back to default profiles: default
+11-07 10:49:04.664 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2b259e4d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:49:04.883 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$aaa5eb7f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:49:06.996 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+11-07 10:49:07.633 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
+11-07 10:49:08.371 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+11-07 10:49:09.266 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 80] - Context refreshed
+11-07 10:49:09.307 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 83] - Found {0} custom documentation plugin(s)
+11-07 10:49:09.324 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 53] - Scanning for api listing references
+11-07 10:49:09.355 [ INFO] [                  c.c.a.d.AppUserDaoTest: 59] - Started AppUserDaoTest in 7.18 seconds (JVM running for 9.33)
+11-07 10:49:10.336 [ INFO] [                 c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+11-07 10:49:10.337 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+11-07 10:50:11.764 [ INFO] [                  c.c.a.d.AppUserDaoTest: 50] - Starting AppUserDaoTest on DESKTOP-4J1ON82 with PID 13052 (started by ChrisYoung in D:\JavaProject\appserver)
+11-07 10:50:11.768 [ INFO] [                  c.c.a.d.AppUserDaoTest:675] - No active profile set, falling back to default profiles: default
+11-07 10:50:13.657 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a6d4bd75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:50:13.993 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$26550aa7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:50:16.757 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+11-07 10:50:17.205 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
+11-07 10:50:17.667 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+11-07 10:50:18.339 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 80] - Context refreshed
+11-07 10:50:18.375 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 83] - Found {0} custom documentation plugin(s)
+11-07 10:50:18.387 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 53] - Scanning for api listing references
+11-07 10:50:18.416 [ INFO] [                  c.c.a.d.AppUserDaoTest: 59] - Started AppUserDaoTest in 7.072 seconds (JVM running for 8.591)
+11-07 10:50:19.043 [ INFO] [                 c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+11-07 10:50:19.044 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+11-07 10:55:43.040 [ INFO] [                  c.c.a.d.AppUserDaoTest: 50] - Starting AppUserDaoTest on DESKTOP-4J1ON82 with PID 19528 (started by ChrisYoung in D:\JavaProject\appserver)
+11-07 10:55:43.041 [ INFO] [                  c.c.a.d.AppUserDaoTest:675] - No active profile set, falling back to default profiles: default
+11-07 10:55:45.459 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$88102825] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:55:45.827 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$7907557] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:55:48.156 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+11-07 10:55:48.581 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
+11-07 10:55:49.051 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+11-07 10:55:49.869 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 80] - Context refreshed
+11-07 10:55:49.910 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 83] - Found {0} custom documentation plugin(s)
+11-07 10:55:49.924 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 53] - Scanning for api listing references
+11-07 10:55:49.955 [ INFO] [                  c.c.a.d.AppUserDaoTest: 59] - Started AppUserDaoTest in 7.43 seconds (JVM running for 9.138)
+11-07 10:55:51.100 [ INFO] [                 c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+11-07 10:55:51.100 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+11-07 10:56:22.697 [ INFO] [                  c.c.a.d.AppUserDaoTest: 50] - Starting AppUserDaoTest on DESKTOP-4J1ON82 with PID 19344 (started by ChrisYoung in D:\JavaProject\appserver)
+11-07 10:56:22.698 [ INFO] [                  c.c.a.d.AppUserDaoTest:675] - No active profile set, falling back to default profiles: default
+11-07 10:56:24.807 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aa5385b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:56:25.147 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$29d3d2e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:56:28.012 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+11-07 10:56:28.488 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
+11-07 10:56:28.987 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+11-07 10:56:29.653 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 80] - Context refreshed
+11-07 10:56:29.686 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 83] - Found {0} custom documentation plugin(s)
+11-07 10:56:29.697 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 53] - Scanning for api listing references
+11-07 10:56:29.722 [ INFO] [                  c.c.a.d.AppUserDaoTest: 59] - Started AppUserDaoTest in 7.475 seconds (JVM running for 9.312)
+11-07 10:56:30.438 [ INFO] [                 c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+11-07 10:56:30.439 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+11-07 10:57:53.633 [ INFO] [                  c.c.a.d.AppUserDaoTest: 50] - Starting AppUserDaoTest on DESKTOP-4J1ON82 with PID 4568 (started by ChrisYoung in D:\JavaProject\appserver)
+11-07 10:57:53.637 [ INFO] [                  c.c.a.d.AppUserDaoTest:675] - No active profile set, falling back to default profiles: default
+11-07 10:57:56.453 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aa5385b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:57:56.849 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$29d3d2e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:57:59.118 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+11-07 10:57:59.570 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
+11-07 10:58:00.093 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+11-07 10:58:01.233 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 80] - Context refreshed
+11-07 10:58:01.266 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 83] - Found {0} custom documentation plugin(s)
+11-07 10:58:01.284 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 53] - Scanning for api listing references
+11-07 10:58:01.314 [ INFO] [                  c.c.a.d.AppUserDaoTest: 59] - Started AppUserDaoTest in 8.251 seconds (JVM running for 10.156)
+11-07 10:58:02.040 [ INFO] [                 c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+11-07 10:58:02.040 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+11-07 10:59:09.733 [ INFO] [                  c.c.a.d.AppUserDaoTest: 50] - Starting AppUserDaoTest on DESKTOP-4J1ON82 with PID 1568 (started by ChrisYoung in D:\JavaProject\appserver)
+11-07 10:59:09.733 [ INFO] [                  c.c.a.d.AppUserDaoTest:675] - No active profile set, falling back to default profiles: default
+11-07 10:59:11.729 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fc6e61a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:59:11.974 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$7beeaedb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-07 10:59:13.962 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+11-07 10:59:14.566 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
+11-07 10:59:15.165 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+11-07 10:59:15.806 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 80] - Context refreshed
+11-07 10:59:15.841 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 83] - Found {0} custom documentation plugin(s)
+11-07 10:59:15.855 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 53] - Scanning for api listing references
+11-07 10:59:15.881 [ INFO] [                  c.c.a.d.AppUserDaoTest: 59] - Started AppUserDaoTest in 6.627 seconds (JVM running for 8.437)
+11-07 10:59:16.520 [ INFO] [                 c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+11-07 10:59:16.521 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'

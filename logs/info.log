@@ -1,0 +1,26 @@
+11-09 08:45:15.640 [ INFO] [                     c.c.a.d.BillDaoTest: 50] - Starting BillDaoTest on DESKTOP-4J1ON82 with PID 10456 (started by ChrisYoung in D:\JavaProject\appserver)
+11-09 08:45:15.649 [ INFO] [                     c.c.a.d.BillDaoTest:675] - No active profile set, falling back to default profiles: default
+11-09 08:45:17.877 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d6188b2b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 08:45:18.147 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$5598d85d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 08:45:20.711 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+11-09 08:45:21.419 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
+11-09 08:45:21.949 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+11-09 08:45:22.699 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 80] - Context refreshed
+11-09 08:45:22.739 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 83] - Found {0} custom documentation plugin(s)
+11-09 08:45:22.755 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 53] - Scanning for api listing references
+11-09 08:45:22.787 [ INFO] [                     c.c.a.d.BillDaoTest: 59] - Started BillDaoTest in 7.599 seconds (JVM running for 9.86)
+11-09 08:45:23.898 [ INFO] [                 c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+11-09 08:45:23.899 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+11-09 08:50:03.760 [ INFO] [                     c.c.a.d.BillDaoTest: 50] - Starting BillDaoTest on DESKTOP-4J1ON82 with PID 15324 (started by ChrisYoung in D:\JavaProject\appserver)
+11-09 08:50:03.761 [ INFO] [                     c.c.a.d.BillDaoTest:675] - No active profile set, falling back to default profiles: default
+11-09 08:50:05.753 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d67c5c79] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 08:50:06.111 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$55fca9ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 08:50:08.459 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+11-09 08:50:08.899 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
+11-09 08:50:09.375 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+11-09 08:50:10.090 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 80] - Context refreshed
+11-09 08:50:10.129 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 83] - Found {0} custom documentation plugin(s)
+11-09 08:50:10.170 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 53] - Scanning for api listing references
+11-09 08:50:10.192 [ INFO] [                     c.c.a.d.BillDaoTest: 59] - Started BillDaoTest in 6.979 seconds (JVM running for 8.859)
+11-09 08:50:11.140 [ INFO] [                 c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+11-09 08:50:11.141 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
