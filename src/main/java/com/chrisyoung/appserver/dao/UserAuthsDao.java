@@ -17,7 +17,7 @@ import java.util.List;
 @Mapper
 public interface UserAuthsDao {
     //添加用户验证条目
-    @Insert("insert into user_auths values(#{uId},#{identityType},#{identify},#{credential},#{refreshtoken})")
+    @Insert("insert into user_auths(u_id,identity_type,identify,credential,refreshtoken) values(#{uId},#{identityType},#{identify},#{credential},#{refreshtoken})")
     int addAuth(UserAuths auth);
 
     //查找验证条目（如：根据手机和密码查找）

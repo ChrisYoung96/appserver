@@ -1,10 +1,19 @@
 package com.chrisyoung.appserver.service.impl;
 
+import com.chrisyoung.appserver.constant.DataTypeCode;
+import com.chrisyoung.appserver.dao.AppUserDao;
+import com.chrisyoung.appserver.dao.UserAuthsDao;
 import com.chrisyoung.appserver.domain.AppUser;
 import com.chrisyoung.appserver.domain.UserAuths;
+import com.chrisyoung.appserver.dto.SychronizeDataItem;
+import com.chrisyoung.appserver.dto.SychronizeDataModel;
 import com.chrisyoung.appserver.service.IAppUserService;
 import com.chrisyoung.appserver.service.IUserAuthsService;
+import com.chrisyoung.appserver.service.IUserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.LinkedList;
 
 /**
  * @program: appserver
@@ -14,9 +23,35 @@ import org.springframework.stereotype.Service;
  **/
 
 @Service
-public class UserService implements IUserAuthsService,IAppUserService {
+public class UserService implements IUserService {
+    private final AppUserDao appUserDao;
+
+    private final UserAuthsDao userAuthsDao;
+
+    @Autowired
+    public UserService(AppUserDao appUserDao, UserAuthsDao userAuthsDao) {
+        this.appUserDao = appUserDao;
+        this.userAuthsDao = userAuthsDao;
+    }
+
+
     @Override
-    public boolean addNewUserInfo(AppUser newUser) {
+    public boolean registerUser(String uId,String identifyType,String identify,String credential) {
+        int result=0;
+        AppUser newUser=new AppUser();
+        newUser.setUId(uId);
+        UserAuths newAuth=new UserAuths();
+        newAuth.setUId(uId);
+        newAuth.setIdentityType(identifyType);
+        newAuth.setIdentify(identify);
+        newAuth.setCredential(credential);
+        result=appUserDao.addUser(newUser);
+        result=userAuthsDao.addAuth(newAuth);
+        return result!=0;
+    }
+
+    @Override
+    public boolean validateUser(String identify, String credentail) {
         return false;
     }
 
@@ -28,11 +63,6 @@ public class UserService implements IUserAuthsService,IAppUserService {
     @Override
     public AppUser showUserInfo(String uId) {
         return null;
-    }
-
-    @Override
-    public boolean validateUser(String identify, String credentail) {
-        return false;
     }
 
     @Override

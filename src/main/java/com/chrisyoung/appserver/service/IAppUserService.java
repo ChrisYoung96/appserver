@@ -10,7 +10,6 @@ import com.chrisyoung.appserver.domain.AppUser;
  **/
 
 public interface IAppUserService {
-    boolean addNewUserInfo(AppUser newUser);
 
     boolean modifyUserInfo(AppUser user);
 

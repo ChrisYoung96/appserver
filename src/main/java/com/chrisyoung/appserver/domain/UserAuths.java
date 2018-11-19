@@ -1,6 +1,8 @@
 package com.chrisyoung.appserver.domain;
 
 
+import org.apache.catalina.User;
+
 public class UserAuths {
 
   private Long uaId;
@@ -9,6 +11,14 @@ public class UserAuths {
   private String identify;  //电话、邮箱、第三方ID
   private String credential; //密码、第三方登陆为access_token&refresh_token
   private String refreshtoken;
+
+  public UserAuths(){
+    this.uId="";
+    this.identityType="";
+    this.identify="";
+    this.credential="";
+    this.refreshtoken="";
+  }
 
 
   public Long getUaId() {
