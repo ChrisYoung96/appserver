@@ -9,6 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.math.BigDecimal;
+import java.sql.Time;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -27,7 +28,7 @@ public class RecordDaoTest {
         r.setRType("支出");
         r.setRKind("吃饭");
         r.setRMoney(BigDecimal.valueOf(17.00));
-        r.setRTime(Timestamp.valueOf("2018-11-10 0:0:0"));
+        r.setRTime(Time.valueOf("2018-11-10 0:0:0"));
         Assert.assertEquals(1,dao.addRecord(r));
     }
 
@@ -53,8 +54,8 @@ public class RecordDaoTest {
     }
 
     @Test public void findRecordsBetweenTime(){
-        Timestamp s=Timestamp.valueOf("2018-11-1 0:0:0");
-        Timestamp e=Timestamp.valueOf("2018-11-10 0:0:0");
+        Time s=Time.valueOf("2018-11-1 0:0:0");
+        Time e=Time.valueOf("2018-11-10 0:0:0");
         List<Record> rs=dao.findRecordsBetweenTime("9e4b5a7a-a5a9-4438-bb9a-86f23a4264ad",s,e);
         for (Record r:
              rs) {

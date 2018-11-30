@@ -1,4 +1,4 @@
-package com.chrisyoung.appserver;
+package com.chrisyoung.appserver.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

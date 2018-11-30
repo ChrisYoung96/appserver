@@ -2,8 +2,10 @@ package com.chrisyoung.appserver.domain;
 
 
 import java.math.BigDecimal;
+import java.sql.Time;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.UUID;
 
 public class Record {
@@ -13,7 +15,7 @@ public class Record {
   private String rType; //收入或支出
   private String rKind; //收入或支出的类型（支持自定义）
   private BigDecimal rMoney; //金额
-  private Timestamp rTime; //交易时间
+  private Time rTime; //交易时间
   private String rDesc; //备注
 
 
@@ -23,7 +25,7 @@ public class Record {
     this.rType="";
     this.rKind="";
     this.rMoney=BigDecimal.valueOf(0,2);
-    this.rTime=Timestamp.valueOf(LocalDateTime.now());
+    this.rTime=Time.valueOf(LocalTime.now());
     this.rDesc="";
   }
 
@@ -72,11 +74,11 @@ public class Record {
   }
 
 
-  public java.sql.Timestamp getRTime() {
+  public java.sql.Time getRTime() {
     return rTime;
   }
 
-  public void setRTime(java.sql.Timestamp rTime) {
+  public void setRTime(java.sql.Time rTime) {
     this.rTime = rTime;
   }
 

@@ -4,6 +4,7 @@ import com.chrisyoung.appserver.domain.Record;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
 
+import java.sql.Time;
 import java.sql.Timestamp;
 import java.util.List;
 
@@ -56,7 +57,7 @@ public interface RecordDao {
             @Result(property = "rTime",column = "r_time"),
             @Result(property = "rDesc",column = "r_desc")
     })
-    List<Record> findRecordsBetweenTime(@Param("bId") String bId, @Param("sTime")Timestamp sTime,@Param("eTime") Timestamp eTime);
+    List<Record> findRecordsBetweenTime(@Param("bId") String bId, @Param("sTime")Time sTime, @Param("eTime") Time eTime);
 
     @Delete("delete from record where r_id=#{rId}")
     int deleteRecord(@Param("rId") String rId);

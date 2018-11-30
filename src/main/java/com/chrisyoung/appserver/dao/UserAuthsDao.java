@@ -1,7 +1,6 @@
 package com.chrisyoung.appserver.dao;
 
 import com.chrisyoung.appserver.domain.UserAuths;
-import com.sun.tracing.dtrace.ProviderAttributes;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
 
