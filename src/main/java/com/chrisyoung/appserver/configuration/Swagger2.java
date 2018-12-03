@@ -25,7 +25,7 @@ public class Swagger2 {
                 .apiInfo(apiInfo())
                 .select()
                 //指定controller存放的目录路径
-                .apis(RequestHandlerSelectors.basePackage("com.chrisyoung.demo.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.chrisyoung.appserver.controller"))
                 .build();
     }
     /*

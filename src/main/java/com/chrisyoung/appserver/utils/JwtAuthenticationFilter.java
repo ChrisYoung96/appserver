@@ -36,8 +36,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                             SecurityContextHolder.getContext().setAuthentication(authentication);
                         }
                     }
+                    httpServletRequest = jwtUtil.addUserIdToHeader(httpServletRequest);
                 }
-                //httpServletRequest = jwtUtil.validateTokenAndAddUserIdToHeader(httpServletRequest);
+
 
         } catch (Exception e) {
             httpServletResponse.sendError(HttpServletResponse.SC_UNAUTHORIZED, e.getMessage());

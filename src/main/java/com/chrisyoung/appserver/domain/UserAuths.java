@@ -12,12 +12,16 @@ public class UserAuths {
   private String credential; //密码、第三方登陆为access_token&refresh_token
   private String refreshtoken;
 
+
+  private String role;
+
   public UserAuths(){
     this.uId="";
     this.identityType="";
     this.identify="";
     this.credential="";
     this.refreshtoken="";
+    this.role="APPUSER";
   }
 
 
@@ -70,6 +74,15 @@ public class UserAuths {
 
   public void setRefreshtoken(String refreshtoken) {
     this.refreshtoken = refreshtoken;
+  }
+
+
+  public String getRole() {
+    return role;
+  }
+
+  public void setRole(String role) {
+    this.role = role;
   }
 
 }

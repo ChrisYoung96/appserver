@@ -14,9 +14,9 @@ import java.util.LinkedList;
  **/
 
 public interface IUserService {
-    boolean registerUser(String uId,String identifyType,String identify,String credential);
+    boolean registerUser(UserAuths newAuth);
 
-    boolean validateUser(String identify,String credentail);
+    String validateUser(String identify,String credentail);
 
     boolean modifyUserInfo(AppUser user);
 
@@ -24,5 +24,5 @@ public interface IUserService {
 
     boolean addNewValidation(UserAuths newAuth);
 
-    boolean modifyPassword(String uId,String newPwd);
+    boolean modifyPassword(String uId,String identify,String newPwd);
 }

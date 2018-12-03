@@ -54,11 +54,11 @@ public class UserServiceTest {
 //        }else{
 //            System.out.println("注册失败");
 //        }
-        String uid=UUID.randomUUID().toString().replace("-","");
-        String type=IdentityTypeCode.PHONE;
-        String phone="13167781234";
-        String code="111111";
-        Assert.assertEquals(true,service.registerUser(uid,type,phone,code));
+//        String uid=UUID.randomUUID().toString().replace("-","");
+//        String type=IdentityTypeCode.PHONE;
+//        String phone="13167781234";
+//        String code="111111";
+//        Assert.assertEquals(true,service.registerUser(uid,type,phone,code));
     }
 
     @Test

@@ -7,6 +7,7 @@ import com.aliyuncs.dysmsapi.model.v20170525.SendSmsResponse;
 import com.aliyuncs.exceptions.ClientException;
 import com.aliyuncs.profile.DefaultProfile;
 import com.aliyuncs.profile.IClientProfile;
+import org.springframework.stereotype.Component;
 
 import java.util.Map;
 
@@ -17,7 +18,7 @@ import java.util.Map;
  * @description: sd
  **/
 
-
+@Component
 public class AliyunMessageUtil {
     //短信API产品名称（短信产品名固定，无需修改）
     private static final String product = "Dysmsapi";
