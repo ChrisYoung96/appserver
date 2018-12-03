@@ -34,7 +34,7 @@ public class MsgController {
         }
     }
 
-    @RequestMapping(value = "/usr/getmsg",method = RequestMethod.POST)
+    @RequestMapping(value = "/usr/validmsg",method = RequestMethod.POST)
     public Result validateCode(@RequestBody VerificationCode code){
         if(msgService.isCodeExpired(code)){
             return Result.failure(ResultCode.CODE_IS_EXPIRED);

@@ -62,7 +62,7 @@ public class UserController {
     @ApiImplicitParam(name = "appUser",value = "用户信息对象",dataType = "AppUser")
     @RequestMapping(value = "/ModifyInfo",method = RequestMethod.POST)
     public Result modifyInfo(@RequestBody AppUser appUser){
-        Boolean r=userService.modifyUserInfo(appUser);
+        boolean r=userService.modifyUserInfo(appUser);
         if(r){
             return Result.success();
         }else{
@@ -72,7 +72,7 @@ public class UserController {
 
     @RequestMapping(value = "/modifyPwd",method = RequestMethod.GET)
     public Result modifyPassword(@RequestParam(value = "identify") String identify, @RequestParam(value = "newPwd") String newPwd){
-        Boolean r=userService.modifyPassword(identify,newPwd);
+        boolean r=userService.modifyPassword(identify,newPwd);
         if(r){
             return Result.success();
         }else{

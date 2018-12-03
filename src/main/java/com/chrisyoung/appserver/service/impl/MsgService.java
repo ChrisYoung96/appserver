@@ -48,7 +48,7 @@ public class MsgService implements IMsgService {
     }
 
     @Override
-    public Boolean isCodeExpired(VerificationCode code) {
+    public boolean isCodeExpired(VerificationCode code) {
         return code.getVerifyTime().getTime() - code.getCreateTime().getTime() > 30000;
     }
 

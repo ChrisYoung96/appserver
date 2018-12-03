@@ -11,5 +11,5 @@ import com.chrisyoung.appserver.dto.VerificationCode;
 
 public interface IMsgService {
     VerificationCode sendMsg(String phoneNum);
-    Boolean isCodeExpired(VerificationCode code);
+    boolean isCodeExpired(VerificationCode code);
 }
