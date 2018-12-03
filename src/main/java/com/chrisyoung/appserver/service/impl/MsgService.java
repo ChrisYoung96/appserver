@@ -2,6 +2,7 @@ package com.chrisyoung.appserver.service.impl;
 
 import com.aliyuncs.dysmsapi.model.v20170525.SendSmsResponse;
 import com.aliyuncs.exceptions.ClientException;
+import com.chrisyoung.appserver.dto.VerificationCode;
 import com.chrisyoung.appserver.service.IMsgService;
 import com.chrisyoung.appserver.utils.AliyunMessageUtil;
 import org.springframework.stereotype.Service;
@@ -31,7 +32,7 @@ public class MsgService implements IMsgService {
 
     }
     @Override
-    public String sendMsg(String phoneNum) {
+    public VerificationCode sendMsg(String phoneNum) {
         paramMap.put("phoneNumber",phoneNum);
         SendSmsResponse sendSmsResponse= null;
         try {
@@ -40,10 +41,15 @@ public class MsgService implements IMsgService {
             e.printStackTrace();
         }
         if(sendSmsResponse.getCode()!=null && sendSmsResponse.getCode().equals("OK")){
-            return randomNum;
+            return new VerificationCode(randomNum);
         }else{
-            return "";
+            return new VerificationCode("");
         }
+    }
+
+    @Override
+    public Boolean isCodeExpired(VerificationCode code) {
+        return code.getVerifyTime().getTime() - code.getCreateTime().getTime() > 30000;
     }
 
     /**

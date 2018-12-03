@@ -1,5 +1,7 @@
 package com.chrisyoung.appserver.service;
 
+import com.chrisyoung.appserver.dto.VerificationCode;
+
 /**
  * @program: appserver
  * @author: Chris Young
@@ -8,5 +10,6 @@ package com.chrisyoung.appserver.service;
  **/
 
 public interface IMsgService {
-    String sendMsg(String phoneNum);
+    VerificationCode sendMsg(String phoneNum);
+    Boolean isCodeExpired(VerificationCode code);
 }

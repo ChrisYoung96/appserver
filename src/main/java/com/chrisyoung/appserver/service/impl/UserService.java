@@ -76,9 +76,9 @@ public class UserService implements IUserService {
     }
 
     @Override
-    public boolean modifyPassword(String uId, String identify,String newPwd) {
+    public boolean modifyPassword(String identify,String newPwd) {
         int result=0;
-        result=userAuthsDao.updateAuth(uId,identify,newPwd);
+        result=userAuthsDao.updateAuth(identify,newPwd);
         return result!=0;
     }
 }

@@ -2,12 +2,10 @@ package com.chrisyoung.appserver.controller;
 
 import com.chrisyoung.appserver.constant.ResultCode;
 import com.chrisyoung.appserver.dto.Result;
+import com.chrisyoung.appserver.dto.VerificationCode;
 import com.chrisyoung.appserver.service.impl.MsgService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @program: appserver
@@ -28,11 +26,21 @@ public class MsgController {
 
     @RequestMapping(value = "/usr/getmsg",method = RequestMethod.GET)
     public Result getCode(@RequestParam("phone") String phone){
-        String code=msgService.sendMsg(phone);
-        if(code.equals("")){
+        VerificationCode code=msgService.sendMsg(phone);
+        if(code.getCode().equals("")){
             return Result.failure(ResultCode.DATA_IS_WRONG);
         }else{
             return Result.success(code);
         }
     }
+
+    @RequestMapping(value = "/usr/getmsg",method = RequestMethod.POST)
+    public Result validateCode(@RequestBody VerificationCode code){
+        if(msgService.isCodeExpired(code)){
+            return Result.failure(ResultCode.CODE_IS_EXPIRED);
+        }else{
+            return Result.success(code);
+        }
+    }
+
 }

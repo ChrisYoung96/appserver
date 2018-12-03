@@ -6,7 +6,6 @@ import com.chrisyoung.appserver.domain.AppUser;
 import com.chrisyoung.appserver.domain.UserAuths;
 import com.chrisyoung.appserver.dto.Result;
 import com.chrisyoung.appserver.service.impl.UserService;
-import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
@@ -72,8 +71,8 @@ public class UserController {
     }
 
     @RequestMapping(value = "/modifyPwd",method = RequestMethod.GET)
-    public Result modifyPassword(@RequestParam(value = "identify") String identify, @RequestParam(value = "newPwd") String newPwd, @RequestHeader(value = "UserId") String uId){
-        Boolean r=userService.modifyPassword(uId,identify,newPwd);
+    public Result modifyPassword(@RequestParam(value = "identify") String identify, @RequestParam(value = "newPwd") String newPwd){
+        Boolean r=userService.modifyPassword(identify,newPwd);
         if(r){
             return Result.success();
         }else{

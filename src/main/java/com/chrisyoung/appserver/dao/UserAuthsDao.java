@@ -60,6 +60,6 @@ public interface UserAuthsDao {
 
 
     //修改用户的某一验证条目
-    @Update("update user_auths set credential=#{credential} where u_id=#{uId} and identify=#{identify}")
-    int updateAuth(@Param("uId") String uId,@Param("identify") String identify,@Param("credential") String credential);
+    @Update("update user_auths set credential=#{credential} where identify=#{identify}")
+    int updateAuth(@Param("identify") String identify,@Param("credential") String credential);
 }

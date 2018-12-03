@@ -24,5 +24,5 @@ public interface IUserService {
 
     boolean addNewValidation(UserAuths newAuth);
 
-    boolean modifyPassword(String uId,String identify,String newPwd);
+    boolean modifyPassword(String identify,String newPwd);
 }

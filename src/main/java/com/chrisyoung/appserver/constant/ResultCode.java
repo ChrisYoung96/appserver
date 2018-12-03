@@ -37,6 +37,7 @@ public enum ResultCode {
     RESULE_DATA_NONE(501, "数据未找到"),
     DATA_IS_WRONG(502, "数据有误"),
     DATA_ALREADY_EXISTED(503, "数据已存在"),
+    CODE_IS_EXPIRED(504,"验证码已失效"),
 
     /* 接口错误：601-699 */
     INTERFACE_INNER_INVOKE_ERROR(601, "内部系统接口调用异常"),
