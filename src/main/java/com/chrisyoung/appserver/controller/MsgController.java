@@ -4,6 +4,8 @@ import com.chrisyoung.appserver.constant.ResultCode;
 import com.chrisyoung.appserver.dto.Result;
 import com.chrisyoung.appserver.dto.VerificationCode;
 import com.chrisyoung.appserver.service.impl.MsgService;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,6 +26,8 @@ public class MsgController {
     }
 
 
+    @ApiOperation(value = "获取验证码",notes = "获取短信验证码")
+    @ApiImplicitParam(value = "用户手机号",name = "phone",dataType = "String",paramType = "query")
     @RequestMapping(value = "/usr/getmsg",method = RequestMethod.GET)
     public Result getCode(@RequestParam("phone") String phone){
         VerificationCode code=msgService.sendMsg(phone);
@@ -34,6 +38,8 @@ public class MsgController {
         }
     }
 
+    @ApiOperation(value = "校验验证码时效性")
+    @ApiImplicitParam(name = "code",value = "用户填好的验证码",dataType = "VerificationCode",paramType = "body")
     @RequestMapping(value = "/usr/validmsg",method = RequestMethod.POST)
     public Result validateCode(@RequestBody VerificationCode code){
         if(msgService.isCodeExpired(code)){

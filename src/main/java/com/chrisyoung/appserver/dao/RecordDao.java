@@ -17,10 +17,10 @@ import java.util.List;
 @Mapper
 @Repository
 public interface RecordDao {
-    @Insert("insert into record values(#{rId},#{bId},#{rType},#{rKind},#{rMoney},#{rTime},#{rDesc})")
+    @Insert("insert into record values(#{rId},#{bId},#{rType},#{rKind},#{rMoney},#{rWay},#{rTime},#{rDesc})")
     int addRecord(Record record);
 
-    @Update("update record set r_type=#{rType},r_kind=#{rKind},r_money=#{rMoney},r_time=#{rTime},r_desc=#{rDesc} where r_id=#{rId}")
+    @Update("update record set r_type=#{rType},r_kind=#{rKind},r_money=#{rMoney},r_way=#{rWay},r_time=#{rTime},r_desc=#{rDesc} where r_id=#{rId}")
     int updateRecord(Record record);
 
     @Select("select * from record where b_id=#{bId} order by r_time")
@@ -30,6 +30,7 @@ public interface RecordDao {
             @Result(property = "rType",column = "r_type"),
             @Result(property = "rKind",column = "r_kind"),
             @Result(property = "rMoney",column = "r_money"),
+            @Result(property = "rWay",column = "r_way"),
             @Result(property = "rTime",column = "r_time"),
             @Result(property = "rDesc",column = "r_desc")
     })
@@ -42,6 +43,7 @@ public interface RecordDao {
             @Result(property = "rType",column = "r_type"),
             @Result(property = "rKind",column = "r_kind"),
             @Result(property = "rMoney",column = "r_money"),
+            @Result(property = "rWay",column = "r_way"),
             @Result(property = "rTime",column = "r_time"),
             @Result(property = "rDesc",column = "r_desc")
     })
@@ -54,6 +56,7 @@ public interface RecordDao {
             @Result(property = "rType",column = "r_type"),
             @Result(property = "rKind",column = "r_kind"),
             @Result(property = "rMoney",column = "r_money"),
+            @Result(property = "rWay",column = "r_way"),
             @Result(property = "rTime",column = "r_time"),
             @Result(property = "rDesc",column = "r_desc")
     })

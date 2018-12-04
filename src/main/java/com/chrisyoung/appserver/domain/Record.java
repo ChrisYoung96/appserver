@@ -15,6 +15,7 @@ public class Record {
   private String rType; //收入或支出
   private String rKind; //收入或支出的类型（支持自定义）
   private BigDecimal rMoney; //金额
+  private String rWay; //支付方式
   private Time rTime; //交易时间
   private String rDesc; //备注
 
@@ -25,6 +26,7 @@ public class Record {
     this.rType="";
     this.rKind="";
     this.rMoney=BigDecimal.valueOf(0,2);
+    this.rWay="";
     this.rTime=Time.valueOf(LocalTime.now());
     this.rDesc="";
   }
@@ -73,6 +75,13 @@ public class Record {
     this.rMoney = rMoney;
   }
 
+  public String getrWay() {
+    return rWay;
+  }
+
+  public void setrWay(String rWay) {
+    this.rWay = rWay;
+  }
 
   public java.sql.Time getRTime() {
     return rTime;

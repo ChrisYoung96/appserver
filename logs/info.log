@@ -1,26 +1,147 @@
-11-09 08:45:15.640 [ INFO] [                     c.c.a.d.BillDaoTest: 50] - Starting BillDaoTest on DESKTOP-4J1ON82 with PID 10456 (started by ChrisYoung in D:\JavaProject\appserver)
-11-09 08:45:15.649 [ INFO] [                     c.c.a.d.BillDaoTest:675] - No active profile set, falling back to default profiles: default
-11-09 08:45:17.877 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d6188b2b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-11-09 08:45:18.147 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$5598d85d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-11-09 08:45:20.711 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
-11-09 08:45:21.419 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
-11-09 08:45:21.949 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
-11-09 08:45:22.699 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 80] - Context refreshed
-11-09 08:45:22.739 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 83] - Found {0} custom documentation plugin(s)
-11-09 08:45:22.755 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 53] - Scanning for api listing references
-11-09 08:45:22.787 [ INFO] [                     c.c.a.d.BillDaoTest: 59] - Started BillDaoTest in 7.599 seconds (JVM running for 9.86)
-11-09 08:45:23.898 [ INFO] [                 c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
-11-09 08:45:23.899 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
-11-09 08:50:03.760 [ INFO] [                     c.c.a.d.BillDaoTest: 50] - Starting BillDaoTest on DESKTOP-4J1ON82 with PID 15324 (started by ChrisYoung in D:\JavaProject\appserver)
-11-09 08:50:03.761 [ INFO] [                     c.c.a.d.BillDaoTest:675] - No active profile set, falling back to default profiles: default
-11-09 08:50:05.753 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d67c5c79] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-11-09 08:50:06.111 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$55fca9ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-11-09 08:50:08.459 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
-11-09 08:50:08.899 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
-11-09 08:50:09.375 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
-11-09 08:50:10.090 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 80] - Context refreshed
-11-09 08:50:10.129 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 83] - Found {0} custom documentation plugin(s)
-11-09 08:50:10.170 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 53] - Scanning for api listing references
-11-09 08:50:10.192 [ INFO] [                     c.c.a.d.BillDaoTest: 59] - Started BillDaoTest in 6.979 seconds (JVM running for 8.859)
-11-09 08:50:11.140 [ INFO] [                 c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
-11-09 08:50:11.141 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+12-04 16:38:52.048 [ INFO] [              c.c.a.AppserverApplication: 50] - Starting AppserverApplication on DESKTOP-4J1ON82 with PID 6724 (D:\JavaProject\appserver\target\classes started by ChrisYoung in D:\JavaProject\appserver)
+12-04 16:38:52.058 [ INFO] [              c.c.a.AppserverApplication:675] - No active profile set, falling back to default profiles: default
+12-04 16:38:53.047 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9cc9ff93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12-04 16:38:53.115 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$3577c7cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12-04 16:38:53.115 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12-04 16:38:53.115 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4dc8c0ea' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12-04 16:38:53.115 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$5a4c6a7f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12-04 16:38:53.125 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12-04 16:38:53.125 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$1c4a4cc5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12-04 16:38:53.355 [ INFO] [             o.s.b.w.e.t.TomcatWebServer: 90] - Tomcat initialized with port(s): 8080 (http)
+12-04 16:38:53.365 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+12-04 16:38:53.365 [ INFO] [                 o.a.c.c.StandardService:173] - Starting service [Tomcat]
+12-04 16:38:53.365 [ INFO] [                  o.a.c.c.StandardEngine:173] - Starting Servlet Engine: Apache Tomcat/9.0.12
+12-04 16:38:53.365 [ INFO] [            o.a.c.c.AprLifecycleListener:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.5.4\bin;E:\RationalRose\common;C:\Users\ChrisYoung\AppData\Local\Microsoft\WindowsApps;C:\Users\ChrisYoung\AppData\Local\GitHubDesktop\bin;.]
+12-04 16:38:53.505 [ INFO] [                       o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+12-04 16:38:53.505 [ INFO] [                   o.s.w.c.ContextLoader:285] - Root WebApplicationContext: initialization completed in 1397 ms
+12-04 16:38:53.565 [ INFO] [        o.s.b.w.s.FilterRegistrationBean:248] - Mapping filter: 'characterEncodingFilter' to: [/*]
+12-04 16:38:53.565 [ INFO] [        o.s.b.w.s.FilterRegistrationBean:248] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+12-04 16:38:53.565 [ INFO] [        o.s.b.w.s.FilterRegistrationBean:248] - Mapping filter: 'formContentFilter' to: [/*]
+12-04 16:38:53.565 [ INFO] [        o.s.b.w.s.FilterRegistrationBean:248] - Mapping filter: 'requestContextFilter' to: [/*]
+12-04 16:38:53.575 [ INFO] [.s.DelegatingFilterProxyRegistrationBean:248] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+12-04 16:38:53.575 [ INFO] [        o.s.b.w.s.FilterRegistrationBean:261] - Mapping filter: 'webStatFilter' to urls: [/*]
+12-04 16:38:53.575 [ INFO] [       o.s.b.w.s.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+12-04 16:38:53.575 [ INFO] [       o.s.b.w.s.ServletRegistrationBean:186] - Servlet statViewServlet mapped to [/druid/*]
+12-04 16:38:53.675 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
+12-04 16:38:53.885 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+12-04 16:38:54.315 [ INFO] [.s.s.UserDetailsServiceAutoConfiguration: 86] - 
+
+Using generated security password: f4c3a878-9319-477b-a2d9-7252f1a2ede6
+
+12-04 16:38:54.365 [ INFO] [      o.s.s.w.DefaultSecurityFilterChain: 43] - Creating filter chain: Ant [pattern='/swagger-ui.html'], []
+12-04 16:38:54.365 [ INFO] [      o.s.s.w.DefaultSecurityFilterChain: 43] - Creating filter chain: Ant [pattern='/webjars/**'], []
+12-04 16:38:54.365 [ INFO] [      o.s.s.w.DefaultSecurityFilterChain: 43] - Creating filter chain: Ant [pattern='/v2/**'], []
+12-04 16:38:54.365 [ INFO] [      o.s.s.w.DefaultSecurityFilterChain: 43] - Creating filter chain: Ant [pattern='/swagger-resources/**'], []
+12-04 16:38:54.365 [ INFO] [      o.s.s.w.DefaultSecurityFilterChain: 43] - Creating filter chain: Ant [pattern='/druid/**'], []
+12-04 16:38:54.395 [ INFO] [      o.s.s.w.DefaultSecurityFilterChain: 43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51e754e1, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e225820, org.springframework.security.web.header.HeaderWriterFilter@33bb3f86, org.springframework.security.web.authentication.logout.LogoutFilter@5cff6b74, com.chrisyoung.appserver.utils.JwtAuthenticationFilter@26865482, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a2dc0a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71179b6f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34451ed8, org.springframework.security.web.session.SessionManagementFilter@14168e1, org.springframework.security.web.access.ExceptionTranslationFilter@61615b4a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79e7188e]
+12-04 16:38:54.535 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+12-04 16:38:54.855 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 80] - Context refreshed
+12-04 16:38:54.865 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 83] - Found {0} custom documentation plugin(s)
+12-04 16:38:54.875 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 53] - Scanning for api listing references
+12-04 16:38:54.875 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method modifyInfo was user-controller
+12-04 16:38:54.875 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: modifyInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.chrisyoung.appserver.controller.UserController}]] 
+12-04 16:38:54.875 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method modifyPassword was user-controller
+12-04 16:38:54.875 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: modifyPassword belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.chrisyoung.appserver.controller.UserController}]] 
+12-04 16:38:54.875 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method getCode was msg-controller
+12-04 16:38:54.875 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: getCode belongs to groups: [[ResourceGroup{groupName='msg-controller', position=0, controller=com.chrisyoung.appserver.controller.MsgController}]] 
+12-04 16:38:54.875 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method login was user-controller
+12-04 16:38:54.875 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.chrisyoung.appserver.controller.UserController}]] 
+12-04 16:38:54.875 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method register was user-controller
+12-04 16:38:54.875 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: register belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.chrisyoung.appserver.controller.UserController}]] 
+12-04 16:38:54.875 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method validateCode was msg-controller
+12-04 16:38:54.875 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: validateCode belongs to groups: [[ResourceGroup{groupName='msg-controller', position=0, controller=com.chrisyoung.appserver.controller.MsgController}]] 
+12-04 16:38:54.885 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 84] - Created resource listing Path: /default/msg-controller Description: msg-controller Position: 0
+12-04 16:38:54.885 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 84] - Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+12-04 16:38:54.895 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:54.895 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:54.905 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:54.905 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:54.935 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:54.935 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:54.935 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:54.935 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:54.945 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /usr/getmsg.com.chrisyoung.appserver.controller.MsgController.getCode.DefaultGenericTypeNamingStrategy
+12-04 16:38:54.945 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /usr/getmsg.com.chrisyoung.appserver.controller.MsgController.getCode.DefaultGenericTypeNamingStrategy
+12-04 16:38:54.945 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method getCode was msg-controller
+12-04 16:38:54.955 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method getCode was msg-controller
+12-04 16:38:54.965 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.VerificationCode(false)
+12-04 16:38:54.965 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.VerificationCode(false)
+12-04 16:38:54.965 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.dto.VerificationCode(false)
+12-04 16:38:54.965 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.dto.VerificationCode(false)
+12-04 16:38:54.975 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.VerificationCode(false)
+12-04 16:38:54.975 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.VerificationCode(false)
+12-04 16:38:54.975 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.dto.VerificationCode(false)
+12-04 16:38:54.975 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.dto.VerificationCode(false)
+12-04 16:38:54.975 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Time(false)
+12-04 16:38:54.975 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Time(false)
+12-04 16:38:54.995 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Time(false)
+12-04 16:38:54.995 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Time(false)
+12-04 16:38:54.995 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Time(false)
+12-04 16:38:54.995 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Time(false)
+12-04 16:38:54.995 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:54.995 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:54.995 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:54.995 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:54.995 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /usr/validmsg.com.chrisyoung.appserver.controller.MsgController.validateCode.DefaultGenericTypeNamingStrategy
+12-04 16:38:55.005 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /usr/validmsg.com.chrisyoung.appserver.controller.MsgController.validateCode.DefaultGenericTypeNamingStrategy
+12-04 16:38:55.005 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method validateCode was msg-controller
+12-04 16:38:55.005 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method validateCode was msg-controller
+12-04 16:38:55.005 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:55.005 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:55.005 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:55.005 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:55.005 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /usr/login.com.chrisyoung.appserver.controller.UserController.login.DefaultGenericTypeNamingStrategy
+12-04 16:38:55.005 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /usr/login.com.chrisyoung.appserver.controller.UserController.login.DefaultGenericTypeNamingStrategy
+12-04 16:38:55.005 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method login was user-controller
+12-04 16:38:55.015 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method login was user-controller
+12-04 16:38:55.015 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:55.015 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:55.015 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:55.015 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:55.015 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.domain.AppUser(false)
+12-04 16:38:55.015 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.domain.AppUser(false)
+12-04 16:38:55.015 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.AppUser(false)
+12-04 16:38:55.015 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.AppUser(false)
+12-04 16:38:55.036 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.domain.AppUser(false)
+12-04 16:38:55.036 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.domain.AppUser(false)
+12-04 16:38:55.036 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.AppUser(false)
+12-04 16:38:55.036 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.AppUser(false)
+12-04 16:38:55.036 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Date(false)
+12-04 16:38:55.036 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Date(false)
+12-04 16:38:55.056 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Date(false)
+12-04 16:38:55.056 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Date(false)
+12-04 16:38:55.056 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /ModifyInfo.com.chrisyoung.appserver.controller.UserController.modifyInfo.DefaultGenericTypeNamingStrategy
+12-04 16:38:55.056 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /ModifyInfo.com.chrisyoung.appserver.controller.UserController.modifyInfo.DefaultGenericTypeNamingStrategy
+12-04 16:38:55.056 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method modifyInfo was user-controller
+12-04 16:38:55.056 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method modifyInfo was user-controller
+12-04 16:38:55.065 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:55.065 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:55.065 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:55.065 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:55.065 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /modifyPwd.com.chrisyoung.appserver.controller.UserController.modifyPassword.DefaultGenericTypeNamingStrategy
+12-04 16:38:55.065 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /modifyPwd.com.chrisyoung.appserver.controller.UserController.modifyPassword.DefaultGenericTypeNamingStrategy
+12-04 16:38:55.065 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method modifyPassword was user-controller
+12-04 16:38:55.065 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method modifyPassword was user-controller
+12-04 16:38:55.065 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:55.065 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:55.065 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:55.065 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.Result(true)
+12-04 16:38:55.065 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.domain.UserAuths(false)
+12-04 16:38:55.076 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.domain.UserAuths(false)
+12-04 16:38:55.076 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.UserAuths(false)
+12-04 16:38:55.076 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.UserAuths(false)
+12-04 16:38:55.085 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.domain.UserAuths(false)
+12-04 16:38:55.085 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.domain.UserAuths(false)
+12-04 16:38:55.085 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.UserAuths(false)
+12-04 16:38:55.085 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.UserAuths(false)
+12-04 16:38:55.095 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /usr/register.com.chrisyoung.appserver.controller.UserController.register.DefaultGenericTypeNamingStrategy
+12-04 16:38:55.095 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /usr/register.com.chrisyoung.appserver.controller.UserController.register.DefaultGenericTypeNamingStrategy
+12-04 16:38:55.095 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method register was user-controller
+12-04 16:38:55.095 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method register was user-controller
+12-04 16:38:55.105 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+12-04 16:38:55.105 [ INFO] [               o.a.t.u.n.NioSelectorPool:173] - Using a shared selector for servlet write/read
+12-04 16:38:55.115 [ INFO] [             o.s.b.w.e.t.TomcatWebServer:204] - Tomcat started on port(s): 8080 (http) with context path ''
+12-04 16:38:55.115 [ INFO] [              c.c.a.AppserverApplication: 59] - Started AppserverApplication in 3.517 seconds (JVM running for 4.424)
+12-04 16:39:16.783 [ INFO] [                       o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12-04 16:39:16.783 [ INFO] [               o.s.w.s.DispatcherServlet:521] - Initializing Servlet 'dispatcherServlet'
+12-04 16:39:16.790 [ INFO] [               o.s.w.s.DispatcherServlet:543] - Completed initialization in 7 ms

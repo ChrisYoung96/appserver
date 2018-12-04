@@ -31,6 +31,9 @@ public interface AppUserDao {
     @Update("update app_user set u_name=#{uName},u_sex=#{uSex},u_birthday=#{uBirthday},u_phone=#{uPhone},u_mail=#{uMail},u_photo=#{uPhoto} where u_id=#{uId}")
     int updateUserInfo(AppUser user);
 
+    @Update("update app_user set u_photo=#{photoPath} where u_id=#{uId}")
+    int updateUserPhoto(@Param("uId") String uId,@Param("photoPath") String photoPath);
+
     @Delete("delete from app_user where u_id=#{uId}")
     int deleteUser(@Param("uId") String uId);
 

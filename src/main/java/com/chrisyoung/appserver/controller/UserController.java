@@ -6,6 +6,7 @@ import com.chrisyoung.appserver.domain.AppUser;
 import com.chrisyoung.appserver.domain.UserAuths;
 import com.chrisyoung.appserver.dto.Result;
 import com.chrisyoung.appserver.service.impl.UserService;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
@@ -20,7 +21,6 @@ import org.springframework.web.bind.annotation.*;
  **/
 
 @RestController
-@RequestMapping("/usr")
 public class UserController {
     private UserService userService;
 
@@ -31,11 +31,11 @@ public class UserController {
 
     @ApiOperation(value = "注册新用户")
     @ApiImplicitParam(name = "userAuths",value = "用户权限对象",dataType = "UserAuths")
-    @RequestMapping(value = "/register",method = RequestMethod.POST)
+    @RequestMapping(value = "/usr/register",method = RequestMethod.POST)
     public Result register(@RequestBody UserAuths userAuths){
         Boolean result=userService.registerUser(userAuths);
 
-        if(result==true){
+        if(result){
             return Result.success();
         }else{
             return Result.failure(ResultCode.DATA_IS_WRONG);
@@ -47,7 +47,7 @@ public class UserController {
             @ApiImplicitParam(name = "identify",value = "手机号",dataType = "String",paramType = "query"),
             @ApiImplicitParam(name = "credential", value = "密码",dataType="String",paramType = "query")}
     )
-    @RequestMapping(value = "/login",method = RequestMethod.GET)
+    @RequestMapping(value = "/usr/login",method = RequestMethod.GET)
     public Result login(@RequestParam(value = "identify") String identify,@RequestParam(value = "credential") String credential){
         String token=userService.validateUser(identify, credential);
         if(token.equals("")) {
@@ -70,6 +70,7 @@ public class UserController {
         }
     }
 
+    @ApiOperation(value = "修改密码")
     @RequestMapping(value = "/modifyPwd",method = RequestMethod.GET)
     public Result modifyPassword(@RequestParam(value = "identify") String identify, @RequestParam(value = "newPwd") String newPwd){
         boolean r=userService.modifyPassword(identify,newPwd);
