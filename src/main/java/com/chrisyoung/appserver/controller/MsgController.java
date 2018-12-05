@@ -4,6 +4,7 @@ import com.chrisyoung.appserver.constant.ResultCode;
 import com.chrisyoung.appserver.dto.Result;
 import com.chrisyoung.appserver.dto.VerificationCode;
 import com.chrisyoung.appserver.service.impl.MsgService;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
  * @create: 2018-12-03 15:05
  * @description: 短信服务接口
  **/
-
+@Api(value = "获取短信验证码Controller")
 @RestController
 public class MsgController {
     private final MsgService msgService;

@@ -34,7 +34,7 @@ public class Swagger2 {
     private ApiInfo apiInfo(){
         return new ApiInfoBuilder()
                 .title("Spring Boot中使用Swagger2构件RESTful APIs") //文档标题
-                .description("aaaa")  //文档
+                .description("对服务器接口的描述")  //文档
                 .version("1.0")  //文档版本
                 .build();
     }

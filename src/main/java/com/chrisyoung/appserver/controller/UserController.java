@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.*;
  * @description: 注册接口
  **/
 
+@Api(value = "用户Controller")
 @RestController
 public class UserController {
     private UserService userService;
