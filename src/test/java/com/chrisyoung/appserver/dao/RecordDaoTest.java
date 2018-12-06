@@ -11,7 +11,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.math.BigDecimal;
 import java.sql.Time;
 import java.sql.Timestamp;
-import java.time.LocalDateTime;
 import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -24,11 +23,13 @@ public class RecordDaoTest {
     @Test
     public void addRecord() {
         Record r=new Record();
-        r.setBId("f576b3ca86c545d69cc15fa4f9c235b4");
+        r.setBId("12345678901");
         r.setRType("支出");
-        r.setRKind("吃饭");
+        r.setRKind("购物");
         r.setRMoney(BigDecimal.valueOf(17.00));
-        r.setRTime(Time.valueOf("2018-11-10 0:0:0"));
+        r.setrWay("支付宝");
+        r.setRTime(new Timestamp(System.currentTimeMillis()));
+        r.setRDesc("测试");
         Assert.assertEquals(1,dao.addRecord(r));
     }
 
@@ -41,7 +42,7 @@ public class RecordDaoTest {
 
     @Test
     public void findAllRecord() {
-        List<Record> records=dao.findAllRecord("9e4b5a7a-a5a9-4438-bb9a-86f23a4264ad");
+        List<Record> records=dao.findAllRecord("12345678901");
         for (Record r :
                 records) {
             System.out.println(r.getRType()+" "+r.getRKind()+" "+r.getRMoney()+" "+r.getRTime().toString());

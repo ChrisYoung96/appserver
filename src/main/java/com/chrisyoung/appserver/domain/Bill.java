@@ -58,4 +58,12 @@ public class Bill {
     this.bDesc = bDesc;
   }
 
+  public Date getbDate() {
+    return bDate;
+  }
+
+  public void setbDate(Date bDate) {
+    this.bDate = bDate;
+  }
+
 }

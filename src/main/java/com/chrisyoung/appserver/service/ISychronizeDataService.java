@@ -1,12 +1,10 @@
 package com.chrisyoung.appserver.service;
 
-import com.chrisyoung.appserver.domain.AppUser;
-import com.chrisyoung.appserver.domain.Bill;
-import com.chrisyoung.appserver.domain.Record;
-import com.chrisyoung.appserver.domain.UserAuths;
+import com.chrisyoung.appserver.domain.*;
 import com.chrisyoung.appserver.dto.SychroNizeBillAndRecords;
 import com.chrisyoung.appserver.dto.SychronizeDataItem;
 import com.chrisyoung.appserver.dto.SychronizeDataModel;
+import io.swagger.annotations.Api;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -26,10 +24,19 @@ public interface ISychronizeDataService {
 
     boolean sychronizeBillsC2S(Queue<SychronizeDataItem<Bill>> datas);
 
+    boolean sychronizeUserDiyKindC2S(Queue<SychronizeDataItem<UserDiy>> datas);
+
+    LinkedList<SychronizeDataItem<Record>> sychronizeRecordsS2C(String bId);
+
+    LinkedList<SychronizeDataItem<Bill>> sychronizeBillsS2C(String uId);
+
+    LinkedList<SychronizeDataItem<UserDiy>> sychronizeUserDiyKindS2C(String uId);
+
     LinkedList<SychronizeDataModel> loadData4FirstTime(String uId);
 
     boolean sychronizeDataC2S(LinkedList<SychronizeDataModel> datas);
 
-    AppUser loadUserInfo4FirstTime(String uId);
+    AppUser sychronizeUserInfoS2C(String uId);
+
 
 }

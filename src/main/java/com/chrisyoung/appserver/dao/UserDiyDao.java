@@ -12,14 +12,14 @@ import java.util.ArrayList;
  * @create: 2018-12-06 11:33
  * @description: 对用户自定义收支类型表的操作
  **/
-
+@Mapper
 @Repository
 public interface UserDiyDao {
-    @Insert("insert into user_diy values(#{uId},#{dType},#{dKind})")
+    @Insert("insert into user_diy (u_id,d_type,d_kind) values(#{uId},#{dType},#{dKind})")
     int addNewKind(UserDiy newkind);
 
-    @Delete("delete from user_id where d_id=#{dId}")
-    int deleteKind(@Param("dId") int dId);
+    @Delete("delete from user_diy where d_id=#{dId}")
+    int deleteKind(@Param("dId") long dId);
 
     @Select("select * from user_diy where u_id=#{uId}")
     @Results({

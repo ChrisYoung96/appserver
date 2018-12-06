@@ -42,7 +42,7 @@ public class UserDiyKindService implements IUserDiyKindService {
     }
 
     @Override
-    public boolean deleteDiyKind(int  dId) {
+    public boolean deleteDiyKind(long  dId) {
         int result=userDiyDao.deleteKind(dId);
         return result==1;
     }
