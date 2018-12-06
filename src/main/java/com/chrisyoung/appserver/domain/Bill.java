@@ -1,6 +1,7 @@
 package com.chrisyoung.appserver.domain;
 
 
+import java.sql.Date;
 import java.util.UUID;
 
 /**
@@ -11,6 +12,7 @@ public class Bill {
   private String bId; //账本ID UUID
   private String uId; //用户ID
   private String bName; //账本名称
+  private Date bDate; //创建日期
   private String bDesc; //备注
 
   public Bill(){

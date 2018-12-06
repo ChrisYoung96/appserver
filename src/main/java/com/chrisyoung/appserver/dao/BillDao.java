@@ -17,7 +17,7 @@ import java.util.List;
 public interface BillDao {
 
     //添加新的账本
-    @Insert("insert into bill values (#{bId},#{uId},#{bName},#{bDesc}) ")
+    @Insert("insert into bill values (#{bId},#{uId},#{bName},#{bDate},#{bDesc}) ")
     int addBill(Bill bill);
 
     //查找某用户所有账本信息
@@ -25,6 +25,7 @@ public interface BillDao {
     @Results({
             @Result(property = "bId",column = "b_id"),
             @Result(property = "bName",column = "b_name"),
+            @Result(property = "bDate",column = "b_date"),
             @Result(property = "bDesc",column = "b_desc")
     })
     List<Bill> findAllBills(@Param("uId") String uid);
@@ -34,6 +35,7 @@ public interface BillDao {
     @Results({
             @Result(property = "bId",column = "b_id"),
             @Result(property = "bName",column = "b_name"),
+            @Result(property = "bDate",column = "b_date"),
             @Result(property = "bDesc",column = "b_desc")
     })
     Bill findBillById(@Param("bId") String bId);

@@ -42,6 +42,7 @@ create table bill(
   b_id varchar(40),
   u_id varchar(40),
   b_name varchar(256),
+  b_date date,
   b_desc varchar(256),
   constraint PK_BID primary key (b_id),
   constraint FK_BILL_USER foreign key (u_id) references app_user(u_id) on delete  cascade
@@ -60,6 +61,17 @@ create table record(
   constraint PK_RID primary key (r_id),
   constraint FK_RECORD_BILL foreign key (b_id) references bill(b_id) on delete cascade
 );
+
+drop table if exists user_diy;
+create table user_diy(
+  d_id integer auto_increment,
+  u_id varchar(40),
+  d_type varchar(20),
+  d_kind varchar(20),
+  constraint PK_DID primary key (d_id),
+  constraint FK_USER_DIY_APP_USER foreign key (u_id) references app_user(u_id)
+);
+
 
 
 
