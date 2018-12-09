@@ -29,7 +29,7 @@ public class MsgController {
 
     @ApiOperation(value = "获取验证码",notes = "获取短信验证码")
     @ApiImplicitParam(value = "用户手机号",name = "phone",dataType = "String",paramType = "query")
-    @RequestMapping(value = "/usr/getmsg",method = RequestMethod.GET)
+    @RequestMapping(value = "/usr/auth/getmsg",method = RequestMethod.GET)
     public Result getCode(@RequestParam("phone") String phone){
         VerificationCode code=msgService.sendMsg(phone);
         if(code.getCode().equals("")){

@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @MapperScan("dao")
-//@ComponentScan(basePackages = "com.chrisyoung.*")  //指定Bean扫描位置
+@ComponentScan(basePackages = "com.chrisyoung.*")  //指定Bean扫描位置
 public class AppserverApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {

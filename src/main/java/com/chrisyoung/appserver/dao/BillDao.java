@@ -17,7 +17,7 @@ import java.util.List;
 public interface BillDao {
 
     //添加新的账本
-    @Insert("insert into bill values (#{bId},#{uId},#{bName},#{bDesc},#{bDate}) ")
+    @Insert("insert into bill values (#{bId},#{uId},#{bName},#{bDate},#{bDesc}) ")
     int addBill(Bill bill);
 
     //查找某用户所有账本信息

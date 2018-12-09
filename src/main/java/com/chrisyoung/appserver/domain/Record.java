@@ -1,6 +1,8 @@
 package com.chrisyoung.appserver.domain;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.time.LocalTime;
@@ -14,7 +16,10 @@ public class Record {
   private String rKind; //收入或支出的类型（支持自定义）
   private BigDecimal rMoney; //金额
   private String rWay; //支付方式
+
+
   private Timestamp rTime; //交易时间
+
   private String rDesc; //备注
 
 
@@ -81,10 +86,12 @@ public class Record {
     this.rWay = rWay;
   }
 
+  @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
   public java.sql.Timestamp getRTime() {
     return rTime;
   }
 
+  @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
   public void setRTime(java.sql.Timestamp rTime) {
     this.rTime = rTime;
   }
