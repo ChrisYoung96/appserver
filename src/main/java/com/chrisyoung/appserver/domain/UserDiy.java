@@ -3,17 +3,17 @@ package com.chrisyoung.appserver.domain;
 
 public class UserDiy {
 
-  private long dId; //自定义收支类型编号
+  private String dId; //自定义收支类型编号
   private String uId; //用户ID
   private String dType; //收入或支出
   private String dKind; //自定义类型
+  private int dVersion;//记录版本
 
-
-  public long getDId() {
+  public String getDId() {
     return dId;
   }
 
-  public void setDId(long dId) {
+  public void setDId(String dId) {
     this.dId = dId;
   }
 
@@ -44,4 +44,11 @@ public class UserDiy {
     this.dKind = dKind;
   }
 
+  public int getdVersion() {
+    return dVersion;
+  }
+
+  public void setdVersion(int dVersion) {
+    this.dVersion = dVersion;
+  }
 }

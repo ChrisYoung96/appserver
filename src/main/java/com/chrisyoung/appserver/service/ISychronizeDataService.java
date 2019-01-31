@@ -26,6 +26,8 @@ public interface ISychronizeDataService {
 
     boolean sychronizeUserDiyKindC2S(Queue<SychronizeDataItem<UserDiy>> datas);
 
+    boolean sychronizeUserInfoC2S(AppUser appUser);
+
     LinkedList<SychronizeDataItem<Record>> sychronizeRecordsS2C(String bId);
 
     LinkedList<SychronizeDataItem<Bill>> sychronizeBillsS2C(String uId);

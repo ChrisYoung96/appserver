@@ -26,7 +26,8 @@ public interface BillDao {
             @Result(property = "bId",column = "b_id"),
             @Result(property = "bName",column = "b_name"),
             @Result(property = "bDate",column = "b_date"),
-            @Result(property = "bDesc",column = "b_desc")
+            @Result(property = "bDesc",column = "b_desc"),
+            @Result(property = "bVersion",column = "b_version")
     })
     List<Bill> findAllBills(@Param("uId") String uid);
 
@@ -36,13 +37,17 @@ public interface BillDao {
             @Result(property = "bId",column = "b_id"),
             @Result(property = "bName",column = "b_name"),
             @Result(property = "bDate",column = "b_date"),
-            @Result(property = "bDesc",column = "b_desc")
+            @Result(property = "bDesc",column = "b_desc"),
+            @Result(property = "bVersion",column = "b_version")
     })
     Bill findBillById(@Param("bId") String bId);
 
+    @Select("select b_version from bill where b_id=#{bId}")
+    int findVersion(String bId);
+
 
     //更新账本信息
-    @Update("update bill set b_name=#{bName},b_desc=#{bDesc} where b_id=#{bId}")
+    @Update("update bill set b_name=#{bName},b_desc=#{bDesc},b_version=#{bVersion} where b_id=#{bId}")
     int updateBill(Bill bill);
 
     //删除账本信息

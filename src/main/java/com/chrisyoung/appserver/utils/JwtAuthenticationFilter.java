@@ -1,5 +1,6 @@
 package com.chrisyoung.appserver.utils;
 
+import com.chrisyoung.appserver.constant.ResultCode;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.OncePerRequestFilter;
@@ -34,9 +35,13 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                             UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(null,null, Arrays.asList(() -> role));
                             //authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(httpServletRequest));
                             SecurityContextHolder.getContext().setAuthentication(authentication);
+                            httpServletRequest = jwtUtil.addUserIdToHeader(httpServletRequest);
+                        }else{
+                            httpServletResponse.sendError(1003,"token expired");
+                            return;
                         }
                     }
-                    httpServletRequest = jwtUtil.addUserIdToHeader(httpServletRequest);
+
                 }
 
 

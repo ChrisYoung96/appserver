@@ -4,7 +4,7 @@ package com.chrisyoung.appserver.controller;
 import com.chrisyoung.appserver.constant.ResultCode;
 import com.chrisyoung.appserver.domain.AppUser;
 import com.chrisyoung.appserver.domain.UserAuths;
-import com.chrisyoung.appserver.dto.Result;
+import com.chrisyoung.appserver.dto.HttpResult;
 import com.chrisyoung.appserver.service.IUploadImageService;
 import com.chrisyoung.appserver.service.impl.UploadImageServie;
 import com.chrisyoung.appserver.service.impl.UserService;
@@ -39,14 +39,15 @@ public class UserController {
     @ApiOperation(value = "注册新用户")
     @ApiImplicitParam(name = "userAuths",value = "用户权限对象",dataType = "UserAuths")
     @RequestMapping(value = "/auth/register",method = RequestMethod.POST)
-    public Result register(@RequestBody UserAuths userAuths){
+    public HttpResult register(@RequestBody UserAuths userAuths){
         Boolean result=userService.registerUser(userAuths);
-
+        HttpResult<String> httpResult=new HttpResult<>();
         if(result){
-            return Result.success();
+            httpResult.setResultCode(ResultCode.SUCCESS);
         }else{
-            return Result.failure(ResultCode.DATA_IS_WRONG);
+            httpResult.setResultCode(ResultCode.DATA_IS_WRONG);
         }
+        return httpResult;
     }
 
     @ApiOperation(value ="登录接口",notes = "用户登录成功后会返回客户端一个token")
@@ -55,37 +56,43 @@ public class UserController {
             @ApiImplicitParam(name = "credential", value = "密码",dataType="String",paramType = "query")}
     )
     @RequestMapping(value = "/auth/login",method = RequestMethod.GET)
-    public Result login(@RequestParam(value = "identify") String identify,@RequestParam(value = "credential") String credential){
+    public HttpResult login(@RequestParam(value = "identify") String identify, @RequestParam(value = "credential") String credential){
         String token=userService.validateUser(identify, credential);
+        HttpResult<String> httpResult=new HttpResult<>();
         if(token.equals("")) {
-            return Result.failure(ResultCode.USER_LOGIN_ERROR);
+            httpResult.setResultCode(ResultCode.USER_LOGIN_ERROR);
         }else{
-            return Result.success(token);
+            httpResult.setResultCode(ResultCode.SUCCESS);
         }
-
+        httpResult.setData(token);
+        return httpResult;
     }
 
     @ApiOperation(value = "修改用户信息")
     @ApiImplicitParam(name = "appUser",value = "用户信息对象",dataType = "AppUser")
     @RequestMapping(value = "/modifyInfo",method = RequestMethod.POST)
-    public Result modifyInfo(@RequestBody AppUser appUser){
+    public HttpResult modifyInfo(@RequestBody AppUser appUser){
         boolean r=userService.modifyUserInfo(appUser);
+        HttpResult<String> httpResult=new HttpResult<>();
         if(r){
-            return Result.success();
+            httpResult.setResultCode(ResultCode.SUCCESS);
         }else{
-            return Result.failure(ResultCode.DATA_IS_WRONG);
+           httpResult.setResultCode(ResultCode.DATA_IS_WRONG);
         }
+        return httpResult;
     }
 
     @ApiOperation(value = "修改密码")
     @RequestMapping(value = "/modifyPwd",method = RequestMethod.GET)
-    public Result modifyPassword(@RequestParam(value = "identify") String identify, @RequestParam(value = "newPwd") String newPwd){
+    public HttpResult modifyPassword(@RequestParam(value = "identify") String identify, @RequestParam(value = "newPwd") String newPwd){
         boolean r=userService.modifyPassword(identify,newPwd);
+        HttpResult<String> httpResult=new HttpResult<>();
         if(r){
-            return Result.success();
+            httpResult.setResultCode(ResultCode.SUCCESS);
         }else{
-            return Result.failure(ResultCode.DATA_IS_WRONG);
+            httpResult.setResultCode(ResultCode.DATA_IS_WRONG);
         }
+        return httpResult;
 
     }
 
@@ -94,14 +101,18 @@ public class UserController {
             @ApiImplicitParam(name = "图片文件",dataType = "MultipartFile",paramType = "body"),
             @ApiImplicitParam(name = "用户ID",dataType = "String",paramType = "header")
     })
+
     @PostMapping("uploadPhoto")
-    public Result uploadHeadPhoto(@RequestParam("image") MultipartFile img, @RequestHeader("UserId") String uId){
+    public HttpResult uploadHeadPhoto(@RequestParam("image") MultipartFile img, @RequestHeader("UserId") String uId){
         String imgPath=uploadImageService.UploadImage(img,uId);
+        HttpResult<String> result=new HttpResult<>();
         if(imgPath.equals("")){
-            return Result.failure(ResultCode.DATA_IS_WRONG);
+            result.setResultCode(ResultCode.DATA_IS_WRONG);
         }else{
-            return Result.success(imgPath);
+            result.setResultCode(ResultCode.SUCCESS);
         }
+        result.setData(imgPath);
+        return result;
     }
 
 }

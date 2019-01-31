@@ -24,7 +24,7 @@ create table app_user(
 
 drop table if exists user_auths cascade ;
 create table user_auths(
-  ua_id integer auto_increment,
+  ua_id varchar(40),
   u_id varchar(40),
   identity_type varchar(40),
   identify varchar(256),
@@ -64,7 +64,7 @@ create table record(
 
 drop table if exists user_diy;
 create table user_diy(
-  d_id integer auto_increment,
+  d_id varchar(40),
   u_id varchar(40),
   d_type varchar(20),
   d_kind varchar(20),

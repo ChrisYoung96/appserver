@@ -16,11 +16,9 @@ public class Record {
   private String rKind; //收入或支出的类型（支持自定义）
   private BigDecimal rMoney; //金额
   private String rWay; //支付方式
-
-
   private Timestamp rTime; //交易时间
-
   private String rDesc; //备注
+  private int rVersion;//记录版本
 
 
   public Record(){
@@ -105,4 +103,11 @@ public class Record {
     this.rDesc = rDesc;
   }
 
+  public int getrVersion() {
+    return rVersion;
+  }
+
+  public void setrVersion(int rVersion) {
+    this.rVersion = rVersion;
+  }
 }

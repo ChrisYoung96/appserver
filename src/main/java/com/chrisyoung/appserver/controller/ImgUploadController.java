@@ -1,7 +1,7 @@
 package com.chrisyoung.appserver.controller;
 
 import com.chrisyoung.appserver.constant.ResultCode;
-import com.chrisyoung.appserver.dto.Result;
+import com.chrisyoung.appserver.dto.HttpResult;
 import com.chrisyoung.appserver.service.IUploadImageService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -37,13 +37,16 @@ public class ImgUploadController {
             @ApiImplicitParam(name = "用户ID",dataType = "String",paramType = "header")
     })
     @PostMapping("/img/upload")
-    public Result uploadImg(@RequestParam("image") MultipartFile img, @RequestHeader("UserId") String uId){
+    public HttpResult uploadImg(@RequestParam("image") MultipartFile img, @RequestHeader("UserId") String uId){
         String imgPath=uploadImageService.UploadImage(img,uId);
+        HttpResult<String> result=new HttpResult<>();
         if(imgPath.equals("")){
-            return Result.failure(ResultCode.DATA_IS_WRONG);
+            result.setResultCode(ResultCode.DATA_IS_WRONG);
         }else{
-            return Result.success(imgPath);
+            result.setResultCode(ResultCode.SUCCESS);
         }
+        result.setData(imgPath);
+        return result;
     }
 
 }

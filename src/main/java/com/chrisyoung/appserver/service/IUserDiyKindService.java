@@ -16,5 +16,5 @@ public interface IUserDiyKindService {
 
     boolean addNewDiyKind(UserDiy newKind);
 
-    boolean deleteDiyKind(long dId);
+    boolean deleteDiyKind(String dId);
 }

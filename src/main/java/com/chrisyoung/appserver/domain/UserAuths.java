@@ -3,20 +3,20 @@ package com.chrisyoung.appserver.domain;
 
 import org.apache.catalina.User;
 
+import java.util.UUID;
+
 public class UserAuths {
 
-  private Long uaId;
+  private String uaId;
   private String uId;  //用户ID
   private String identityType;  //登陆类型
   private String identify;  //电话、邮箱、第三方ID
   private String credential; //密码、第三方登陆为access_token&refresh_token
   private String refreshtoken;
-
-
   private String role;
 
   public UserAuths(){
-    this.uId="";
+    this.uId=UUID.randomUUID().toString().replace("-","");
     this.identityType="";
     this.identify="";
     this.credential="";
@@ -25,11 +25,11 @@ public class UserAuths {
   }
 
 
-  public Long getUaId() {
+  public String getUaId() {
     return uaId;
   }
 
-  public void setUaId(Long uaId) {
+  public void setUaId(String uaId) {
     this.uaId = uaId;
   }
 

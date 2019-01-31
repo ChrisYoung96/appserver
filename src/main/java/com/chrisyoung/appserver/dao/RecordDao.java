@@ -17,10 +17,10 @@ import java.util.List;
 @Mapper
 @Repository
 public interface RecordDao {
-    @Insert("insert into record values(#{rId},#{bId},#{rType},#{rKind},#{rMoney},#{rWay},#{rTime},#{rDesc})")
+    @Insert("insert into record values(#{rId},#{bId},#{rType},#{rKind},#{rMoney},#{rWay},#{rTime},#{rDesc},#{rVersion})")
     int addRecord(Record record);
 
-    @Update("update record set r_type=#{rType},r_kind=#{rKind},r_money=#{rMoney},r_way=#{rWay},r_time=#{rTime},r_desc=#{rDesc} where r_id=#{rId}")
+    @Update("update record set r_type=#{rType},r_kind=#{rKind},r_money=#{rMoney},r_way=#{rWay},r_time=#{rTime},r_desc=#{rDesc},r_version=#{rVersion} where r_id=#{rId}")
     int updateRecord(Record record);
 
     @Select("select * from record where b_id=#{bId} order by r_time")
@@ -32,7 +32,8 @@ public interface RecordDao {
             @Result(property = "rMoney",column = "r_money"),
             @Result(property = "rWay",column = "r_way"),
             @Result(property = "rTime",column = "r_time"),
-            @Result(property = "rDesc",column = "r_desc")
+            @Result(property = "rDesc",column = "r_desc"),
+            @Result(property = "rVersion",column = "r_version")
     })
     List<Record> findAllRecord(@Param("bId") String bId);
 
@@ -45,7 +46,8 @@ public interface RecordDao {
             @Result(property = "rMoney",column = "r_money"),
             @Result(property = "rWay",column = "r_way"),
             @Result(property = "rTime",column = "r_time"),
-            @Result(property = "rDesc",column = "r_desc")
+            @Result(property = "rDesc",column = "r_desc"),
+            @Result(property = "rVersion",column = "r_version")
     })
     Record findRecordById(@Param("rId") String rid);
 
@@ -58,10 +60,14 @@ public interface RecordDao {
             @Result(property = "rMoney",column = "r_money"),
             @Result(property = "rWay",column = "r_way"),
             @Result(property = "rTime",column = "r_time"),
-            @Result(property = "rDesc",column = "r_desc")
+            @Result(property = "rDesc",column = "r_desc"),
+            @Result(property = "rVersion",column = "r_version")
     })
     List<Record> findRecordsBetweenTime(@Param("bId") String bId, @Param("sTime")Time sTime, @Param("eTime") Time eTime);
 
     @Delete("delete from record where r_id=#{rId}")
     int deleteRecord(@Param("rId") String rId);
+
+    @Select("select r_version from record where r_id=#{rId}")
+    int findRecordVersion(String rId);
 }

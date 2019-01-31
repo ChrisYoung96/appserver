@@ -1,7 +1,7 @@
 package com.chrisyoung.appserver.controller;
 
 import com.chrisyoung.appserver.constant.ResultCode;
-import com.chrisyoung.appserver.dto.Result;
+import com.chrisyoung.appserver.dto.HttpResult;
 import com.chrisyoung.appserver.dto.VerificationCode;
 import com.chrisyoung.appserver.service.impl.MsgService;
 import io.swagger.annotations.Api;
@@ -30,24 +30,30 @@ public class MsgController {
     @ApiOperation(value = "获取验证码",notes = "获取短信验证码")
     @ApiImplicitParam(value = "用户手机号",name = "phone",dataType = "String",paramType = "query")
     @RequestMapping(value = "/usr/auth/getmsg",method = RequestMethod.GET)
-    public Result getCode(@RequestParam("phone") String phone){
+    public HttpResult getCode(@RequestParam("phone") String phone){
         VerificationCode code=msgService.sendMsg(phone);
+        HttpResult<VerificationCode> result=new HttpResult<>();
         if(code.getCode().equals("")){
-            return Result.failure(ResultCode.DATA_IS_WRONG);
+            result.setResultCode(ResultCode.DATA_IS_WRONG);
         }else{
-            return Result.success(code);
+           result.setResultCode(ResultCode.SUCCESS);
         }
+        result.setData(code);
+        return result;
     }
 
     @ApiOperation(value = "校验验证码时效性")
     @ApiImplicitParam(name = "code",value = "用户填好的验证码",dataType = "VerificationCode",paramType = "body")
     @RequestMapping(value = "/usr/validmsg",method = RequestMethod.POST)
-    public Result validateCode(@RequestBody VerificationCode code){
+    public HttpResult validateCode(@RequestBody VerificationCode code){
+        HttpResult<VerificationCode> result=new HttpResult<>();
         if(msgService.isCodeExpired(code)){
-            return Result.failure(ResultCode.CODE_IS_EXPIRED);
+            result.setResultCode(ResultCode.CODE_IS_EXPIRED);
         }else{
-            return Result.success(code);
+            result.setResultCode(ResultCode.SUCCESS);
         }
+        result.setData(code);
+        return result;
     }
 
 }

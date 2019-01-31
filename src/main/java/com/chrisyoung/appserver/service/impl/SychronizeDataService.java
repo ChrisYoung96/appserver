@@ -45,26 +45,31 @@ public class SychronizeDataService implements ISychronizeDataService {
 
     @Override
     public boolean sychronizeRecordsC2S(Queue<SychronizeDataItem<Record>> datas) {
-        int result=0;
+        int result = 0;
         if (datas.isEmpty()) {
             return false;
         } else {
             while (!datas.isEmpty()) {
                 SychronizeDataItem<Record> item = datas.poll();
                 if (item != null) {
+                    Record r = item.getData();
                     switch (item.getOptCode()) {
                         case OptCode.INSERT:
-                            result=recordDao.addRecord(item.getData());
+                            result = recordDao.addRecord(r);
                             break;
                         case OptCode.UPDATE:
-                            result=recordDao.updateRecord(item.getData());
+                            if (r.getrVersion() > recordDao.findRecordVersion(r.getRId())) {
+                                result = recordDao.updateRecord(r);
+                            }else{
+                                datas.add(item);
+                            }
                             break;
                         case OptCode.DELETE:
-                            result=recordDao.deleteRecord(item.getData().getRId());
+                            result = recordDao.deleteRecord(item.getData().getRId());
                             break;
                     }
                 }
-                if(result==0){
+                if (result == 0) {
                     return false;
                 }
             }
@@ -74,26 +79,31 @@ public class SychronizeDataService implements ISychronizeDataService {
 
     @Override
     public boolean sychronizeBillsC2S(Queue<SychronizeDataItem<Bill>> datas) {
-        int result=0;
-        if(datas.isEmpty()){
+        int result = 0;
+        if (datas.isEmpty()) {
             return false;
-        }else {
-            while(!datas.isEmpty()){
-                SychronizeDataItem<Bill> item=datas.poll();
+        } else {
+            while (!datas.isEmpty()) {
+                SychronizeDataItem<Bill> item = datas.poll();
                 if (item != null) {
+                    Bill b = item.getData();
                     switch (item.getOptCode()) {
                         case OptCode.INSERT:
-                            result=billDao.addBill(item.getData());
+                            result = billDao.addBill(b);
                             break;
                         case OptCode.UPDATE:
-                            result= billDao.updateBill(item.getData());
+                            if (b.getbVersion() > billDao.findVersion(b.getBId())){
+                                result = billDao.updateBill(b);
+                            }else{
+                                datas.add(item);
+                            }
                             break;
                         case OptCode.DELETE:
-                            result= billDao.deleteBill(item.getData().getBId());
+                            result = billDao.deleteBill(item.getData().getBId());
                             break;
                     }
                 }
-                if(result==0){
+                if (result == 0) {
                     return false;
                 }
 
@@ -104,25 +114,34 @@ public class SychronizeDataService implements ISychronizeDataService {
 
     @Override
     public boolean sychronizeUserDiyKindC2S(Queue<SychronizeDataItem<UserDiy>> datas) {
-        int result=0;
-        if(datas.isEmpty()){
+        int result = 0;
+        if (datas.isEmpty()) {
             return false;
-        }else {
-            while(!datas.isEmpty()){
-                SychronizeDataItem<UserDiy> item=datas.poll();
+        } else {
+            while (!datas.isEmpty()) {
+                SychronizeDataItem<UserDiy> item = datas.poll();
                 if (item != null) {
-                    switch (item.getOptCode()){
+                    UserDiy d = item.getData();
+                    switch (item.getOptCode()) {
                         case OptCode.INSERT:
-                            result=userDiyDao.addNewKind(item.getData());
+                            result = userDiyDao.addNewKind(d);
                             break;
+                        case OptCode.UPDATE:
+                            if(d.getdVersion()>userDiyDao.findKindVersion(d.getDId())){
+                                result=userDiyDao.updateKind(d);
+                            }else{
+                                datas.add(item);
+                            }
+
+
                         case OptCode.DELETE:
-                            result=userDiyDao.deleteKind((int)item.getData().getDId());
+                            result = userDiyDao.deleteKind(item.getData().getDId());
                             break;
                     }
                 }
             }
 
-            if(result==0){
+            if (result == 0) {
                 return false;
             }
         }
@@ -130,13 +149,20 @@ public class SychronizeDataService implements ISychronizeDataService {
     }
 
     @Override
+    public boolean sychronizeUserInfoC2S(AppUser appUser) {
+        return 1 == appUserDao.updateUserInfo(appUser);
+
+    }
+
+
+    @Override
     public LinkedList<SychronizeDataItem<Record>> sychronizeRecordsS2C(String bId) {
-        LinkedList<SychronizeDataItem<Record>> allrecords=new LinkedList<>();
-        List<Record> records=recordDao.findAllRecord(bId);
-        if(!records.isEmpty()){
-            for (Record r:records
-                 ) {
-                SychronizeDataItem<Record> record=new SychronizeDataItem<>();
+        LinkedList<SychronizeDataItem<Record>> allrecords = new LinkedList<>();
+        List<Record> records = recordDao.findAllRecord(bId);
+        if (!records.isEmpty()) {
+            for (Record r : records
+                    ) {
+                SychronizeDataItem<Record> record = new SychronizeDataItem<>();
                 record.setData(r);
                 record.setOptCode(OptCode.INSERT);
                 allrecords.addLast(record);
@@ -147,11 +173,11 @@ public class SychronizeDataService implements ISychronizeDataService {
 
     @Override
     public LinkedList<SychronizeDataItem<Bill>> sychronizeBillsS2C(String uId) {
-        LinkedList<SychronizeDataItem<Bill>> allBills=new LinkedList<>();
-        List<Bill> bills=billDao.findAllBills(uId);
-        if(!bills.isEmpty()){
-            for(Bill b:bills){
-                SychronizeDataItem<Bill> bill=new SychronizeDataItem<>();
+        LinkedList<SychronizeDataItem<Bill>> allBills = new LinkedList<>();
+        List<Bill> bills = billDao.findAllBills(uId);
+        if (!bills.isEmpty()) {
+            for (Bill b : bills) {
+                SychronizeDataItem<Bill> bill = new SychronizeDataItem<>();
                 bill.setOptCode(OptCode.INSERT);
                 bill.setData(b);
                 allBills.addLast(bill);
@@ -162,11 +188,11 @@ public class SychronizeDataService implements ISychronizeDataService {
 
     @Override
     public LinkedList<SychronizeDataItem<UserDiy>> sychronizeUserDiyKindS2C(String uId) {
-        LinkedList<SychronizeDataItem<UserDiy>> allDiyKinds=new LinkedList<>();
-        List<UserDiy> userDiys=userDiyDao.findAllDiyKind(uId);
-        if(!userDiys.isEmpty()){
-            for(UserDiy d:userDiys){
-                SychronizeDataItem<UserDiy> diyKind=new SychronizeDataItem<>();
+        LinkedList<SychronizeDataItem<UserDiy>> allDiyKinds = new LinkedList<>();
+        List<UserDiy> userDiys = userDiyDao.findAllDiyKind(uId);
+        if (!userDiys.isEmpty()) {
+            for (UserDiy d : userDiys) {
+                SychronizeDataItem<UserDiy> diyKind = new SychronizeDataItem<>();
                 diyKind.setData(d);
                 diyKind.setOptCode(OptCode.INSERT);
                 allDiyKinds.addLast(diyKind);

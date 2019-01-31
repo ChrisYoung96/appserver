@@ -1,159 +1,329 @@
-12-05 15:26:17.002 [ INFO] [              c.c.a.AppserverApplication: 50] - Starting AppserverApplication on DESKTOP-4J1ON82 with PID 15116 (D:\JavaProject\appserver\target\classes started by ChrisYoung in D:\JavaProject\appserver)
-12-05 15:26:17.012 [ INFO] [              c.c.a.AppserverApplication:675] - No active profile set, falling back to default profiles: default
-12-05 15:26:18.112 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6c160edf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-12-05 15:26:18.202 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$4c3d719] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-12-05 15:26:18.202 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-12-05 15:26:18.202 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3ed03652' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-12-05 15:26:18.212 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$299879cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-12-05 15:26:18.212 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-12-05 15:26:18.222 [ INFO] [trationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$eb965c11] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-12-05 15:26:18.482 [ INFO] [             o.s.b.w.e.t.TomcatWebServer: 90] - Tomcat initialized with port(s): 8080 (http)
-12-05 15:26:18.492 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
-12-05 15:26:18.502 [ INFO] [                 o.a.c.c.StandardService:173] - Starting service [Tomcat]
-12-05 15:26:18.502 [ INFO] [                  o.a.c.c.StandardEngine:173] - Starting Servlet Engine: Apache Tomcat/9.0.12
-12-05 15:26:18.502 [ INFO] [            o.a.c.c.AprLifecycleListener:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.5.4\bin;E:\RationalRose\common;C:\Users\ChrisYoung\AppData\Local\Microsoft\WindowsApps;C:\Users\ChrisYoung\AppData\Local\GitHubDesktop\bin;.]
-12-05 15:26:18.662 [ INFO] [                       o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
-12-05 15:26:18.662 [ INFO] [                   o.s.w.c.ContextLoader:285] - Root WebApplicationContext: initialization completed in 1590 ms
-12-05 15:26:18.727 [ INFO] [        o.s.b.w.s.FilterRegistrationBean:248] - Mapping filter: 'characterEncodingFilter' to: [/*]
-12-05 15:26:18.727 [ INFO] [        o.s.b.w.s.FilterRegistrationBean:248] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-12-05 15:26:18.727 [ INFO] [        o.s.b.w.s.FilterRegistrationBean:248] - Mapping filter: 'formContentFilter' to: [/*]
-12-05 15:26:18.727 [ INFO] [        o.s.b.w.s.FilterRegistrationBean:248] - Mapping filter: 'requestContextFilter' to: [/*]
-12-05 15:26:18.727 [ INFO] [.s.DelegatingFilterProxyRegistrationBean:248] - Mapping filter: 'springSecurityFilterChain' to: [/*]
-12-05 15:26:18.727 [ INFO] [        o.s.b.w.s.FilterRegistrationBean:261] - Mapping filter: 'webStatFilter' to urls: [/*]
-12-05 15:26:18.727 [ INFO] [       o.s.b.w.s.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
-12-05 15:26:18.727 [ INFO] [       o.s.b.w.s.ServletRegistrationBean:186] - Servlet statViewServlet mapped to [/druid/*]
-12-05 15:26:18.853 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
-12-05 15:26:19.063 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
-12-05 15:26:19.563 [ INFO] [.s.s.UserDetailsServiceAutoConfiguration: 86] - 
+01-08 10:54:30.199 [ INFO] [              c.c.a.AppserverApplication: 50] - Starting AppserverApplication on DESKTOP-4J1ON82 with PID 15284 (D:\JavaProject\appserver\target\classes started by ChrisYoung in D:\JavaProject\appserver)
+01-08 10:54:30.217 [ INFO] [              c.c.a.AppserverApplication:654] - No active profile set, falling back to default profiles: default
+01-08 10:54:30.546 [ INFO] [ConfigServletWebServerApplicationContext:588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@865dd6: startup date [Tue Jan 08 10:54:30 CST 2019]; root of context hierarchy
+01-08 10:54:33.822 [ INFO] [trationDelegate$BeanPostProcessorChecker:326] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6d6a6052] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01-08 10:54:34.043 [ INFO] [trationDelegate$BeanPostProcessorChecker:326] - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$618288c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01-08 10:54:34.065 [ INFO] [trationDelegate$BeanPostProcessorChecker:326] - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01-08 10:54:34.076 [ INFO] [trationDelegate$BeanPostProcessorChecker:326] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@213c3543' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01-08 10:54:34.089 [ INFO] [trationDelegate$BeanPostProcessorChecker:326] - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$2aeccb3e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01-08 10:54:34.103 [ INFO] [trationDelegate$BeanPostProcessorChecker:326] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01-08 10:54:34.124 [ INFO] [trationDelegate$BeanPostProcessorChecker:326] - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$eceaad84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01-08 10:54:34.969 [ INFO] [             o.s.b.w.e.t.TomcatWebServer: 91] - Tomcat initialized with port(s): 8080 (http)
+01-08 10:54:35.006 [ INFO] [               o.a.c.h.Http11NioProtocol:180] - Initializing ProtocolHandler ["http-nio-8080"]
+01-08 10:54:35.031 [ INFO] [                 o.a.c.c.StandardService:180] - Starting service [Tomcat]
+01-08 10:54:35.032 [ INFO] [                  o.a.c.c.StandardEngine:180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+01-08 10:54:35.044 [ INFO] [            o.a.c.c.AprLifecycleListener:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\Java\jdk1.8.0_162\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.5.4\bin;E:\RationalRose\common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\ChrisYoung\AppData\Local\Microsoft\WindowsApps;C:\Users\ChrisYoung\AppData\Local\GitHubDesktop\bin;.]
+01-08 10:54:35.418 [ INFO] [                       o.a.c.c.C.[.[.[/]:180] - Initializing Spring embedded WebApplicationContext
+01-08 10:54:35.418 [ INFO] [                   o.s.w.c.ContextLoader:285] - Root WebApplicationContext: initialization completed in 4875 ms
+01-08 10:54:35.668 [ INFO] [        o.s.b.w.s.FilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+01-08 10:54:35.669 [ INFO] [        o.s.b.w.s.FilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+01-08 10:54:35.669 [ INFO] [        o.s.b.w.s.FilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+01-08 10:54:35.669 [ INFO] [        o.s.b.w.s.FilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+01-08 10:54:35.670 [ INFO] [.s.DelegatingFilterProxyRegistrationBean:245] - Mapping filter: 'springSecurityFilterChain' to: [/*]
+01-08 10:54:35.670 [ INFO] [        o.s.b.w.s.FilterRegistrationBean:258] - Mapping filter: 'webStatFilter' to urls: [/*]
+01-08 10:54:35.671 [ INFO] [       o.s.b.w.s.ServletRegistrationBean:187] - Servlet dispatcherServlet mapped to [/]
+01-08 10:54:35.672 [ INFO] [       o.s.b.w.s.ServletRegistrationBean:187] - Servlet statViewServlet mapped to [/druid/*]
+01-08 10:54:36.030 [ INFO] [c.a.d.s.b.a.DruidDataSourceAutoConfigure: 56] - Init DruidDataSource
+01-08 10:54:36.803 [ INFO] [                 c.a.d.p.DruidDataSource:930] - {dataSource-1} inited
+01-08 10:54:38.766 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/img/upload],methods=[POST]}" onto public com.chrisyoung.appserver.dto.HttpResult com.chrisyoung.appserver.controller.ImgUploadController.uploadImg(org.springframework.web.multipart.MultipartFile,java.lang.String)
+01-08 10:54:38.769 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/usr/auth/getmsg],methods=[GET]}" onto public com.chrisyoung.appserver.dto.HttpResult com.chrisyoung.appserver.controller.MsgController.getCode(java.lang.String)
+01-08 10:54:38.769 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/usr/validmsg],methods=[POST]}" onto public com.chrisyoung.appserver.dto.HttpResult com.chrisyoung.appserver.controller.MsgController.validateCode(com.chrisyoung.appserver.dto.VerificationCode)
+01-08 10:54:38.781 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/sychdata/userInofs2c],methods=[GET]}" onto public com.chrisyoung.appserver.dto.HttpResult com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeUserInfoS2C(java.lang.String)
+01-08 10:54:38.781 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/sychdata/bills2c],methods=[GET]}" onto public com.chrisyoung.appserver.dto.HttpResult com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeBillS2C(java.lang.String)
+01-08 10:54:38.782 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/sychdata/diykindsc2s],methods=[POST]}" onto public com.chrisyoung.appserver.dto.HttpResult com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeDiyKindsC2S(java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.UserDiy>>)
+01-08 10:54:38.783 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/sychdata/records2c],methods=[GET]}" onto public com.chrisyoung.appserver.dto.HttpResult com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeRecordsS2C(java.lang.String)
+01-08 10:54:38.784 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/sychdata/billsc2s],methods=[POST]}" onto public com.chrisyoung.appserver.dto.HttpResult com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeBillsC2S(java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Bill>>)
+01-08 10:54:38.785 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/sychdata/recordsc2s],methods=[POST]}" onto public com.chrisyoung.appserver.dto.HttpResult com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeRecordsC2S(java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Record>>)
+01-08 10:54:38.786 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/sychdata/diykindss2c],methods=[GET]}" onto public com.chrisyoung.appserver.dto.HttpResult com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeDiyKindsS2C(java.lang.String)
+01-08 10:54:38.789 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/usr/auth/register],methods=[POST]}" onto public com.chrisyoung.appserver.dto.HttpResult com.chrisyoung.appserver.controller.UserController.register(com.chrisyoung.appserver.domain.UserAuths)
+01-08 10:54:38.790 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/usr/auth/login],methods=[GET]}" onto public com.chrisyoung.appserver.dto.HttpResult com.chrisyoung.appserver.controller.UserController.login(java.lang.String,java.lang.String)
+01-08 10:54:38.791 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/usr/modifyPwd],methods=[GET]}" onto public com.chrisyoung.appserver.dto.HttpResult com.chrisyoung.appserver.controller.UserController.modifyPassword(java.lang.String,java.lang.String)
+01-08 10:54:38.791 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/usr/uploadPhoto],methods=[POST]}" onto public com.chrisyoung.appserver.dto.HttpResult com.chrisyoung.appserver.controller.UserController.uploadHeadPhoto(org.springframework.web.multipart.MultipartFile,java.lang.String)
+01-08 10:54:38.791 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/usr/modifyInfo],methods=[POST]}" onto public com.chrisyoung.appserver.dto.HttpResult com.chrisyoung.appserver.controller.UserController.modifyInfo(com.chrisyoung.appserver.domain.AppUser)
+01-08 10:54:38.795 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+01-08 10:54:38.800 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+01-08 10:54:38.800 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+01-08 10:54:38.801 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+01-08 10:54:38.812 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+01-08 10:54:38.812 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerMapping:549] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+01-08 10:54:39.265 [ INFO] [.s.s.UserDetailsServiceAutoConfiguration: 86] - 
 
-Using generated security password: 9e3dacf0-0bef-4de4-82dc-f9aec3ae3a8b
+Using generated security password: dd107650-9d42-4ed0-ba54-88996b76d0df
 
-12-05 15:26:19.633 [ INFO] [      o.s.s.w.DefaultSecurityFilterChain: 43] - Creating filter chain: Ant [pattern='/swagger-ui.html'], []
-12-05 15:26:19.633 [ INFO] [      o.s.s.w.DefaultSecurityFilterChain: 43] - Creating filter chain: Ant [pattern='/webjars/**'], []
-12-05 15:26:19.633 [ INFO] [      o.s.s.w.DefaultSecurityFilterChain: 43] - Creating filter chain: Ant [pattern='/v2/**'], []
-12-05 15:26:19.633 [ INFO] [      o.s.s.w.DefaultSecurityFilterChain: 43] - Creating filter chain: Ant [pattern='/swagger-resources/**'], []
-12-05 15:26:19.633 [ INFO] [      o.s.s.w.DefaultSecurityFilterChain: 43] - Creating filter chain: Ant [pattern='/druid/**'], []
-12-05 15:26:19.693 [ INFO] [      o.s.s.w.DefaultSecurityFilterChain: 43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c134052, org.springframework.security.web.context.SecurityContextPersistenceFilter@4ac8768e, org.springframework.security.web.header.HeaderWriterFilter@5f366587, org.springframework.security.web.authentication.logout.LogoutFilter@6436e181, com.chrisyoung.appserver.utils.JwtAuthenticationFilter@69de5bed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@691500ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ea04cab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@750f64fe, org.springframework.security.web.session.SessionManagementFilter@7ca16adc, org.springframework.security.web.access.ExceptionTranslationFilter@36ef1d65, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@603cabc4]
-12-05 15:26:19.933 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
-12-05 15:26:20.312 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 80] - Context refreshed
-12-05 15:26:20.352 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 83] - Found {0} custom documentation plugin(s)
-12-05 15:26:20.352 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 53] - Scanning for api listing references
-12-05 15:26:20.362 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method modifyInfo was user-controller
-12-05 15:26:20.362 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: modifyInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.chrisyoung.appserver.controller.UserController}]] 
-12-05 15:26:20.362 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method uploadImg was img-upload-controller
-12-05 15:26:20.362 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: uploadImg belongs to groups: [[ResourceGroup{groupName='img-upload-controller', position=0, controller=com.chrisyoung.appserver.controller.ImgUploadController}]] 
-12-05 15:26:20.362 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method modifyPassword was user-controller
-12-05 15:26:20.362 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: modifyPassword belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.chrisyoung.appserver.controller.UserController}]] 
-12-05 15:26:20.362 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method getCode was msg-controller
-12-05 15:26:20.362 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: getCode belongs to groups: [[ResourceGroup{groupName='msg-controller', position=0, controller=com.chrisyoung.appserver.controller.MsgController}]] 
-12-05 15:26:20.362 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method login was user-controller
-12-05 15:26:20.362 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.chrisyoung.appserver.controller.UserController}]] 
-12-05 15:26:20.362 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method register was user-controller
-12-05 15:26:20.362 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: register belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.chrisyoung.appserver.controller.UserController}]] 
-12-05 15:26:20.362 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method validateCode was msg-controller
-12-05 15:26:20.362 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: validateCode belongs to groups: [[ResourceGroup{groupName='msg-controller', position=0, controller=com.chrisyoung.appserver.controller.MsgController}]] 
-12-05 15:26:20.362 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 84] - Created resource listing Path: /default/img-upload-controller Description: img-upload-controller Position: 0
-12-05 15:26:20.362 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 84] - Created resource listing Path: /default/msg-controller Description: msg-controller Position: 0
-12-05 15:26:20.362 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 84] - Created resource listing Path: /default/user-controller Description: user-controller Position: 0
-12-05 15:26:20.382 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.382 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.392 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.392 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.422 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.422 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.422 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.422 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.422 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /img/upload.com.chrisyoung.appserver.controller.ImgUploadController.uploadImg.DefaultGenericTypeNamingStrategy
-12-05 15:26:20.422 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /img/upload.com.chrisyoung.appserver.controller.ImgUploadController.uploadImg.DefaultGenericTypeNamingStrategy
-12-05 15:26:20.442 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method uploadImg was img-upload-controller
-12-05 15:26:20.442 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method uploadImg was img-upload-controller
-12-05 15:26:20.452 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.452 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.452 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.452 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.452 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /usr/getmsg.com.chrisyoung.appserver.controller.MsgController.getCode.DefaultGenericTypeNamingStrategy
-12-05 15:26:20.452 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /usr/getmsg.com.chrisyoung.appserver.controller.MsgController.getCode.DefaultGenericTypeNamingStrategy
-12-05 15:26:20.452 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method getCode was msg-controller
-12-05 15:26:20.462 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method getCode was msg-controller
-12-05 15:26:20.462 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.VerificationCode(false)
-12-05 15:26:20.462 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.VerificationCode(false)
-12-05 15:26:20.462 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.dto.VerificationCode(false)
-12-05 15:26:20.462 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.dto.VerificationCode(false)
-12-05 15:26:20.472 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.VerificationCode(false)
-12-05 15:26:20.472 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.VerificationCode(false)
-12-05 15:26:20.472 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.dto.VerificationCode(false)
-12-05 15:26:20.472 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.dto.VerificationCode(false)
-12-05 15:26:20.472 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Time(false)
-12-05 15:26:20.472 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Time(false)
-12-05 15:26:20.492 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Time(false)
-12-05 15:26:20.492 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Time(false)
-12-05 15:26:20.492 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Time(false)
-12-05 15:26:20.492 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Time(false)
-12-05 15:26:20.492 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.492 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.502 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.502 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.502 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /usr/validmsg.com.chrisyoung.appserver.controller.MsgController.validateCode.DefaultGenericTypeNamingStrategy
-12-05 15:26:20.502 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /usr/validmsg.com.chrisyoung.appserver.controller.MsgController.validateCode.DefaultGenericTypeNamingStrategy
-12-05 15:26:20.502 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method validateCode was msg-controller
-12-05 15:26:20.502 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method validateCode was msg-controller
-12-05 15:26:20.502 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.502 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.502 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.502 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.502 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /usr/login.com.chrisyoung.appserver.controller.UserController.login.DefaultGenericTypeNamingStrategy
-12-05 15:26:20.502 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /usr/login.com.chrisyoung.appserver.controller.UserController.login.DefaultGenericTypeNamingStrategy
-12-05 15:26:20.502 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method login was user-controller
-12-05 15:26:20.502 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method login was user-controller
-12-05 15:26:20.512 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.512 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.512 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.512 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.512 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.domain.AppUser(false)
-12-05 15:26:20.512 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.domain.AppUser(false)
-12-05 15:26:20.512 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.AppUser(false)
-12-05 15:26:20.512 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.AppUser(false)
-12-05 15:26:20.532 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.domain.AppUser(false)
-12-05 15:26:20.532 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.domain.AppUser(false)
-12-05 15:26:20.532 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.AppUser(false)
-12-05 15:26:20.532 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.AppUser(false)
-12-05 15:26:20.532 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Date(false)
-12-05 15:26:20.532 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Date(false)
-12-05 15:26:20.552 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Date(false)
-12-05 15:26:20.552 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Date(false)
-12-05 15:26:20.552 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /ModifyInfo.com.chrisyoung.appserver.controller.UserController.modifyInfo.DefaultGenericTypeNamingStrategy
-12-05 15:26:20.552 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /ModifyInfo.com.chrisyoung.appserver.controller.UserController.modifyInfo.DefaultGenericTypeNamingStrategy
-12-05 15:26:20.552 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method modifyInfo was user-controller
-12-05 15:26:20.552 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method modifyInfo was user-controller
-12-05 15:26:20.562 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.562 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.562 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.562 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.562 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /modifyPwd.com.chrisyoung.appserver.controller.UserController.modifyPassword.DefaultGenericTypeNamingStrategy
-12-05 15:26:20.562 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /modifyPwd.com.chrisyoung.appserver.controller.UserController.modifyPassword.DefaultGenericTypeNamingStrategy
-12-05 15:26:20.562 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method modifyPassword was user-controller
-12-05 15:26:20.562 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method modifyPassword was user-controller
-12-05 15:26:20.562 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.562 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.562 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.562 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.Result(true)
-12-05 15:26:20.562 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.domain.UserAuths(false)
-12-05 15:26:20.562 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.domain.UserAuths(false)
-12-05 15:26:20.562 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.UserAuths(false)
-12-05 15:26:20.562 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.UserAuths(false)
-12-05 15:26:20.582 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.domain.UserAuths(false)
-12-05 15:26:20.582 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.domain.UserAuths(false)
-12-05 15:26:20.582 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.UserAuths(false)
-12-05 15:26:20.582 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.UserAuths(false)
-12-05 15:26:20.582 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /usr/register.com.chrisyoung.appserver.controller.UserController.register.DefaultGenericTypeNamingStrategy
-12-05 15:26:20.582 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /usr/register.com.chrisyoung.appserver.controller.UserController.register.DefaultGenericTypeNamingStrategy
-12-05 15:26:20.592 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method register was user-controller
-12-05 15:26:20.592 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method register was user-controller
-12-05 15:26:20.602 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
-12-05 15:26:20.612 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Pausing ProtocolHandler ["http-nio-8080"]
-12-05 15:26:20.612 [ INFO] [                 o.a.c.c.StandardService:173] - Stopping service [Tomcat]
-12-05 15:26:20.622 [ INFO] [                   o.a.c.u.LifecycleBase:173] - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
-12-05 15:26:20.622 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Stopping ProtocolHandler ["http-nio-8080"]
-12-05 15:26:20.622 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Destroying ProtocolHandler ["http-nio-8080"]
-12-05 15:26:20.642 [ INFO] [          o.s.s.c.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
-12-05 15:26:20.652 [ INFO] [                 c.a.d.p.DruidDataSource:1825] - {dataSource-1} closed
+01-08 10:54:39.395 [ INFO] [      o.s.s.w.DefaultSecurityFilterChain: 43] - Creating filter chain: Ant [pattern='/swagger-ui.html'], []
+01-08 10:54:39.396 [ INFO] [      o.s.s.w.DefaultSecurityFilterChain: 43] - Creating filter chain: Ant [pattern='/webjars/**'], []
+01-08 10:54:39.397 [ INFO] [      o.s.s.w.DefaultSecurityFilterChain: 43] - Creating filter chain: Ant [pattern='/v2/**'], []
+01-08 10:54:39.397 [ INFO] [      o.s.s.w.DefaultSecurityFilterChain: 43] - Creating filter chain: Ant [pattern='/swagger-resources/**'], []
+01-08 10:54:39.397 [ INFO] [      o.s.s.w.DefaultSecurityFilterChain: 43] - Creating filter chain: Ant [pattern='/druid/**'], []
+01-08 10:54:39.552 [ INFO] [      o.s.s.w.DefaultSecurityFilterChain: 43] - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d3b58ca, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c281eb8, org.springframework.security.web.header.HeaderWriterFilter@889a8a8, org.springframework.security.web.authentication.logout.LogoutFilter@ebda593, com.chrisyoung.appserver.utils.JwtAuthenticationFilter@4e224df5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29be997f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35b17c06, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32456db0, org.springframework.security.web.session.SessionManagementFilter@ed2f2f6, org.springframework.security.web.access.ExceptionTranslationFilter@1a07bf6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78ec89a6]
+01-08 10:54:39.744 [ INFO] [       o.s.w.s.h.SimpleUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01-08 10:54:40.248 [ INFO] [s.w.s.m.m.a.RequestMappingHandlerAdapter:588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@865dd6: startup date [Tue Jan 08 10:54:30 CST 2019]; root of context hierarchy
+01-08 10:54:40.511 [ INFO] [       o.s.w.s.h.SimpleUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01-08 10:54:40.512 [ INFO] [       o.s.w.s.h.SimpleUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+01-08 10:54:41.788 [ INFO] [       o.s.j.e.a.AnnotationMBeanExporter:433] - Registering beans for JMX exposure on startup
+01-08 10:54:41.793 [ INFO] [       o.s.j.e.a.AnnotationMBeanExporter:895] - Bean with name 'statFilter' has been autodetected for JMX exposure
+01-08 10:54:41.794 [ INFO] [       o.s.j.e.a.AnnotationMBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+01-08 10:54:41.820 [ INFO] [       o.s.j.e.a.AnnotationMBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+01-08 10:54:41.823 [ INFO] [       o.s.j.e.a.AnnotationMBeanExporter:668] - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+01-08 10:54:41.890 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 80] - Context refreshed
+01-08 10:54:41.922 [ INFO] [d.s.w.p.DocumentationPluginsBootstrapper: 83] - Found {0} custom documentation plugin(s)
+01-08 10:54:41.935 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 53] - Scanning for api listing references
+01-08 10:54:41.944 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method uploadImg was 图片上传controller
+01-08 10:54:41.947 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: uploadImg belongs to groups: [[ResourceGroup{groupName='图片上传controller', position=0, controller=com.chrisyoung.appserver.controller.ImgUploadController}]] 
+01-08 10:54:41.948 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeBillS2C was 数据同步controller
+01-08 10:54:41.949 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: sychronizeBillS2C belongs to groups: [[ResourceGroup{groupName='数据同步controller', position=0, controller=com.chrisyoung.appserver.controller.SychronizeDataController}]] 
+01-08 10:54:41.950 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeBillsC2S was 数据同步controller
+01-08 10:54:41.950 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: sychronizeBillsC2S belongs to groups: [[ResourceGroup{groupName='数据同步controller', position=0, controller=com.chrisyoung.appserver.controller.SychronizeDataController}]] 
+01-08 10:54:41.951 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeDiyKindsC2S was 数据同步controller
+01-08 10:54:41.951 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: sychronizeDiyKindsC2S belongs to groups: [[ResourceGroup{groupName='数据同步controller', position=0, controller=com.chrisyoung.appserver.controller.SychronizeDataController}]] 
+01-08 10:54:41.952 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeDiyKindsS2C was 数据同步controller
+01-08 10:54:41.953 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: sychronizeDiyKindsS2C belongs to groups: [[ResourceGroup{groupName='数据同步controller', position=0, controller=com.chrisyoung.appserver.controller.SychronizeDataController}]] 
+01-08 10:54:41.953 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeRecordsS2C was 数据同步controller
+01-08 10:54:41.953 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: sychronizeRecordsS2C belongs to groups: [[ResourceGroup{groupName='数据同步controller', position=0, controller=com.chrisyoung.appserver.controller.SychronizeDataController}]] 
+01-08 10:54:41.953 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeRecordsC2S was 数据同步controller
+01-08 10:54:41.953 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: sychronizeRecordsC2S belongs to groups: [[ResourceGroup{groupName='数据同步controller', position=0, controller=com.chrisyoung.appserver.controller.SychronizeDataController}]] 
+01-08 10:54:41.955 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeUserInfoS2C was 数据同步controller
+01-08 10:54:41.955 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: sychronizeUserInfoS2C belongs to groups: [[ResourceGroup{groupName='数据同步controller', position=0, controller=com.chrisyoung.appserver.controller.SychronizeDataController}]] 
+01-08 10:54:41.955 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method getCode was 获取短信验证码controller
+01-08 10:54:41.955 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: getCode belongs to groups: [[ResourceGroup{groupName='获取短信验证码controller', position=0, controller=com.chrisyoung.appserver.controller.MsgController}]] 
+01-08 10:54:41.955 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method login was 用户controller
+01-08 10:54:41.956 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: login belongs to groups: [[ResourceGroup{groupName='用户controller', position=0, controller=com.chrisyoung.appserver.controller.UserController}]] 
+01-08 10:54:41.956 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method register was 用户controller
+01-08 10:54:41.956 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: register belongs to groups: [[ResourceGroup{groupName='用户controller', position=0, controller=com.chrisyoung.appserver.controller.UserController}]] 
+01-08 10:54:41.957 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method modifyInfo was 用户controller
+01-08 10:54:41.957 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: modifyInfo belongs to groups: [[ResourceGroup{groupName='用户controller', position=0, controller=com.chrisyoung.appserver.controller.UserController}]] 
+01-08 10:54:41.957 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method modifyPassword was 用户controller
+01-08 10:54:41.958 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: modifyPassword belongs to groups: [[ResourceGroup{groupName='用户controller', position=0, controller=com.chrisyoung.appserver.controller.UserController}]] 
+01-08 10:54:41.958 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method uploadHeadPhoto was 用户controller
+01-08 10:54:41.958 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: uploadHeadPhoto belongs to groups: [[ResourceGroup{groupName='用户controller', position=0, controller=com.chrisyoung.appserver.controller.UserController}]] 
+01-08 10:54:41.960 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method validateCode was 获取短信验证码controller
+01-08 10:54:41.960 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 72] - Request mapping: validateCode belongs to groups: [[ResourceGroup{groupName='获取短信验证码controller', position=0, controller=com.chrisyoung.appserver.controller.MsgController}]] 
+01-08 10:54:41.964 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 84] - Created resource listing Path: /default/获取短信验证码controller Description: 获取短信验证码controller Position: 0
+01-08 10:54:41.966 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 84] - Created resource listing Path: /default/数据同步controller Description: 数据同步controller Position: 0
+01-08 10:54:41.966 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 84] - Created resource listing Path: /default/图片上传controller Description: 图片上传controller Position: 0
+01-08 10:54:41.966 [ INFO] [    s.d.s.w.s.ApiListingReferenceScanner: 84] - Created resource listing Path: /default/用户controller Description: 用户controller Position: 0
+01-08 10:54:42.011 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.012 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.025 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.026 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.115 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.116 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.121 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.121 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.126 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /img/upload.com.chrisyoung.appserver.controller.ImgUploadController.uploadImg.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.126 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /img/upload.com.chrisyoung.appserver.controller.ImgUploadController.uploadImg.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.165 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method uploadImg was 图片上传controller
+01-08 10:54:42.180 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method uploadImg was 图片上传controller
+01-08 10:54:42.206 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.207 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.208 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.208 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.208 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /sychdata/bills2c.com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeBillS2C.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.209 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /sychdata/bills2c.com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeBillS2C.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.214 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeBillS2C was 数据同步controller
+01-08 10:54:42.217 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeBillS2C was 数据同步controller
+01-08 10:54:42.223 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.223 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.224 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.224 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.224 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Bill>>(false)
+01-08 10:54:42.224 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Bill>>(false)
+01-08 10:54:42.225 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Bill>>(false)
+01-08 10:54:42.225 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Bill>>(false)
+01-08 10:54:42.228 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.Bill(false)
+01-08 10:54:42.228 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.Bill(false)
+01-08 10:54:42.248 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Date(false)
+01-08 10:54:42.249 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Date(false)
+01-08 10:54:42.303 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Bill>(false)
+01-08 10:54:42.303 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Bill>(false)
+01-08 10:54:42.313 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.Bill(false)
+01-08 10:54:42.313 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.Bill(false)
+01-08 10:54:42.314 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Date(false)
+01-08 10:54:42.315 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Date(false)
+01-08 10:54:42.316 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Bill>>(false)
+01-08 10:54:42.316 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Bill>>(false)
+01-08 10:54:42.317 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Bill>(false)
+01-08 10:54:42.318 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Bill>(false)
+01-08 10:54:42.319 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.Bill(false)
+01-08 10:54:42.319 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.Bill(false)
+01-08 10:54:42.320 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Date(false)
+01-08 10:54:42.321 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Date(false)
+01-08 10:54:42.322 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /sychdata/billsc2s.com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeBillsC2S.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.323 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /sychdata/billsc2s.com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeBillsC2S.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.326 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeBillsC2S was 数据同步controller
+01-08 10:54:42.329 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeBillsC2S was 数据同步controller
+01-08 10:54:42.333 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.333 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.334 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.334 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.334 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.UserDiy>>(false)
+01-08 10:54:42.335 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.UserDiy>>(false)
+01-08 10:54:42.336 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.UserDiy>>(false)
+01-08 10:54:42.336 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.UserDiy>>(false)
+01-08 10:54:42.337 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.UserDiy(false)
+01-08 10:54:42.338 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.UserDiy(false)
+01-08 10:54:42.358 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.UserDiy>(false)
+01-08 10:54:42.358 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.UserDiy>(false)
+01-08 10:54:42.366 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.UserDiy(false)
+01-08 10:54:42.367 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.UserDiy(false)
+01-08 10:54:42.367 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.UserDiy>>(false)
+01-08 10:54:42.368 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.UserDiy>>(false)
+01-08 10:54:42.369 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.UserDiy>(false)
+01-08 10:54:42.370 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.UserDiy>(false)
+01-08 10:54:42.371 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.UserDiy(false)
+01-08 10:54:42.371 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.UserDiy(false)
+01-08 10:54:42.373 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /sychdata/diykindsc2s.com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeDiyKindsC2S.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.373 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /sychdata/diykindsc2s.com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeDiyKindsC2S.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.377 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeDiyKindsC2S was 数据同步controller
+01-08 10:54:42.379 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeDiyKindsC2S was 数据同步controller
+01-08 10:54:42.383 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.384 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.385 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.385 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.386 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /sychdata/diykindss2c.com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeDiyKindsS2C.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.386 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /sychdata/diykindss2c.com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeDiyKindsS2C.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.390 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeDiyKindsS2C was 数据同步controller
+01-08 10:54:42.393 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeDiyKindsS2C was 数据同步controller
+01-08 10:54:42.398 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.398 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.400 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.401 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.401 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Record>>(false)
+01-08 10:54:42.402 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Record>>(false)
+01-08 10:54:42.403 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Record>>(false)
+01-08 10:54:42.404 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Record>>(false)
+01-08 10:54:42.407 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.Record(false)
+01-08 10:54:42.408 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.Record(false)
+01-08 10:54:42.452 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Timestamp(false)
+01-08 10:54:42.452 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Timestamp(false)
+01-08 10:54:42.498 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Record>(false)
+01-08 10:54:42.499 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Record>(false)
+01-08 10:54:42.509 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.Record(false)
+01-08 10:54:42.509 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.Record(false)
+01-08 10:54:42.512 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Timestamp(false)
+01-08 10:54:42.512 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Timestamp(false)
+01-08 10:54:42.513 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Record>>(false)
+01-08 10:54:42.514 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.util.LinkedList<com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Record>>(false)
+01-08 10:54:42.516 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Record>(false)
+01-08 10:54:42.516 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.dto.SychronizeDataItem<com.chrisyoung.appserver.domain.Record>(false)
+01-08 10:54:42.518 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.Record(false)
+01-08 10:54:42.518 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.Record(false)
+01-08 10:54:42.519 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Timestamp(false)
+01-08 10:54:42.520 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Timestamp(false)
+01-08 10:54:42.522 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /sychdata/recordsc2s.com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeRecordsC2S.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.523 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /sychdata/recordsc2s.com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeRecordsC2S.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.529 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeRecordsC2S was 数据同步controller
+01-08 10:54:42.531 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeRecordsC2S was 数据同步controller
+01-08 10:54:42.537 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.538 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.539 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.539 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.540 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /sychdata/records2c.com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeRecordsS2C.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.540 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /sychdata/records2c.com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeRecordsS2C.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.543 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeRecordsS2C was 数据同步controller
+01-08 10:54:42.546 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeRecordsS2C was 数据同步controller
+01-08 10:54:42.550 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.550 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.551 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.551 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.551 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /sychdata/userInofs2c.com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeUserInfoS2C.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.552 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /sychdata/userInofs2c.com.chrisyoung.appserver.controller.SychronizeDataController.sychronizeUserInfoS2C.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.555 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeUserInfoS2C was 数据同步controller
+01-08 10:54:42.558 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method sychronizeUserInfoS2C was 数据同步controller
+01-08 10:54:42.562 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.563 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.563 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.563 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.564 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /usr/auth/login.com.chrisyoung.appserver.controller.UserController.login.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.564 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /usr/auth/login.com.chrisyoung.appserver.controller.UserController.login.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.567 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method login was 用户controller
+01-08 10:54:42.570 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method login was 用户controller
+01-08 10:54:42.575 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.576 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.577 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.577 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.578 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.domain.AppUser(false)
+01-08 10:54:42.579 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.domain.AppUser(false)
+01-08 10:54:42.579 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.AppUser(false)
+01-08 10:54:42.580 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.AppUser(false)
+01-08 10:54:42.610 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.domain.AppUser(false)
+01-08 10:54:42.610 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.domain.AppUser(false)
+01-08 10:54:42.610 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.AppUser(false)
+01-08 10:54:42.611 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.AppUser(false)
+01-08 10:54:42.612 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Date(false)
+01-08 10:54:42.612 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Date(false)
+01-08 10:54:42.613 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Date(false)
+01-08 10:54:42.614 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Date(false)
+01-08 10:54:42.615 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /usr/modifyInfo.com.chrisyoung.appserver.controller.UserController.modifyInfo.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.616 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /usr/modifyInfo.com.chrisyoung.appserver.controller.UserController.modifyInfo.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.619 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method modifyInfo was 用户controller
+01-08 10:54:42.623 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method modifyInfo was 用户controller
+01-08 10:54:42.626 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.627 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.627 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.628 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.628 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /usr/modifyPwd.com.chrisyoung.appserver.controller.UserController.modifyPassword.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.629 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /usr/modifyPwd.com.chrisyoung.appserver.controller.UserController.modifyPassword.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.632 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method modifyPassword was 用户controller
+01-08 10:54:42.634 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method modifyPassword was 用户controller
+01-08 10:54:42.637 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.637 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.638 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.639 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.639 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.domain.UserAuths(false)
+01-08 10:54:42.639 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.domain.UserAuths(false)
+01-08 10:54:42.640 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.UserAuths(false)
+01-08 10:54:42.640 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.UserAuths(false)
+01-08 10:54:42.662 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.domain.UserAuths(false)
+01-08 10:54:42.662 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.domain.UserAuths(false)
+01-08 10:54:42.663 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.domain.UserAuths(false)
+01-08 10:54:42.663 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.domain.UserAuths(false)
+01-08 10:54:42.664 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /usr/auth/register.com.chrisyoung.appserver.controller.UserController.register.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.664 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /usr/auth/register.com.chrisyoung.appserver.controller.UserController.register.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.669 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method register was 用户controller
+01-08 10:54:42.673 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method register was 用户controller
+01-08 10:54:42.677 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.678 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.679 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.679 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.680 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /usr/uploadPhoto.com.chrisyoung.appserver.controller.UserController.uploadHeadPhoto.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.680 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /usr/uploadPhoto.com.chrisyoung.appserver.controller.UserController.uploadHeadPhoto.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.685 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method uploadHeadPhoto was 用户controller
+01-08 10:54:42.688 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method uploadHeadPhoto was 用户controller
+01-08 10:54:42.693 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.693 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.694 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.695 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.695 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /usr/auth/getmsg.com.chrisyoung.appserver.controller.MsgController.getCode.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.695 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /usr/auth/getmsg.com.chrisyoung.appserver.controller.MsgController.getCode.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.714 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method getCode was 获取短信验证码controller
+01-08 10:54:42.717 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method getCode was 获取短信验证码controller
+01-08 10:54:42.721 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.722 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.722 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.722 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.HttpResult(true)
+01-08 10:54:42.723 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.VerificationCode(false)
+01-08 10:54:42.724 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache models with key com.chrisyoung.appserver.dto.VerificationCode(false)
+01-08 10:54:42.724 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.dto.VerificationCode(false)
+01-08 10:54:42.724 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.dto.VerificationCode(false)
+01-08 10:54:42.736 [ INFO] [          s.d.s.ModelContextKeyGenerator: 46] - Cache Key Generated: com.chrisyoung.appserver.dto.VerificationCode(false)
+01-08 10:54:42.736 [ INFO] [                 s.d.s.w.c.CachingAspect: 79] - Caching aspect applied for cache modelDependencies with key com.chrisyoung.appserver.dto.VerificationCode(false)
+01-08 10:54:42.736 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: com.chrisyoung.appserver.dto.VerificationCode(false)
+01-08 10:54:42.737 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key com.chrisyoung.appserver.dto.VerificationCode(false)
+01-08 10:54:42.738 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Time(false)
+01-08 10:54:42.738 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Time(false)
+01-08 10:54:42.774 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Time(false)
+01-08 10:54:42.774 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Time(false)
+01-08 10:54:42.775 [ INFO] [     s.d.s.p.ModelPropertiesKeyGenerator: 48] - Cache key generated: java.sql.Time(false)
+01-08 10:54:42.776 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache modelProperties with key java.sql.Time(false)
+01-08 10:54:42.777 [ INFO] [          s.d.s.w.OperationsKeyGenerator: 51] - Cache key generated: /usr/validmsg.com.chrisyoung.appserver.controller.MsgController.validateCode.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.777 [ INFO] [                 s.d.s.w.c.CachingAspect: 68] - Caching aspect applied for cache operations with key /usr/validmsg.com.chrisyoung.appserver.controller.MsgController.validateCode.DefaultGenericTypeNamingStrategy
+01-08 10:54:42.780 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method validateCode was 获取短信验证码controller
+01-08 10:54:42.782 [ INFO] [s.w.ClassOrApiAnnotationResourceGrouping:100] - Group for method validateCode was 获取短信验证码controller
+01-08 10:54:42.811 [ INFO] [               o.a.c.h.Http11NioProtocol:180] - Starting ProtocolHandler ["http-nio-8080"]
+01-08 10:54:42.836 [ INFO] [               o.a.t.u.n.NioSelectorPool:180] - Using a shared selector for servlet write/read
+01-08 10:54:42.870 [ INFO] [             o.s.b.w.e.t.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+01-08 10:54:42.879 [ INFO] [              c.c.a.AppserverApplication: 59] - Started AppserverApplication in 13.569 seconds (JVM running for 15.718)
+01-08 11:18:47.661 [ INFO] [                       o.a.c.c.C.[.[.[/]:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+01-08 11:18:47.662 [ INFO] [               o.s.w.s.DispatcherServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+01-08 11:18:47.710 [ INFO] [               o.s.w.s.DispatcherServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 48 ms
