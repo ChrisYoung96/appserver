@@ -3,12 +3,13 @@ package com.chrisyoung.appserver.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.time.LocalTime;
 import java.util.UUID;
 
-public class Record {
+public class Record implements Serializable {
 
   private String rId; //订单编号
   private String bId; //账本编号
@@ -32,47 +33,47 @@ public class Record {
     this.rDesc="";
   }
 
-  public String getRId() {
+  public String getrId() {
     return rId;
   }
 
-  public void setRId(String rId) {
+  public void setrId(String rId) {
     this.rId = rId;
   }
 
 
-  public String getBId() {
+  public String getbId() {
     return bId;
   }
 
-  public void setBId(String bId) {
+  public void setbId(String bId) {
     this.bId = bId;
   }
 
 
-  public String getRType() {
+  public String getrType() {
     return rType;
   }
 
-  public void setRType(String rType) {
+  public void setrType(String rType) {
     this.rType = rType;
   }
 
 
-  public String getRKind() {
+  public String getrKind() {
     return rKind;
   }
 
-  public void setRKind(String rKind) {
+  public void setrKind(String rKind) {
     this.rKind = rKind;
   }
 
 
-  public BigDecimal getRMoney() {
+  public BigDecimal getrMoney() {
     return rMoney;
   }
 
-  public void setRMoney(BigDecimal rMoney) {
+  public void setrMoney(BigDecimal rMoney) {
     this.rMoney = rMoney;
   }
 
@@ -85,12 +86,12 @@ public class Record {
   }
 
   @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
-  public java.sql.Timestamp getRTime() {
+  public java.sql.Timestamp getrTime() {
     return rTime;
   }
 
   @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
-  public void setRTime(java.sql.Timestamp rTime) {
+  public void setrTime(java.sql.Timestamp rTime) {
     this.rTime = rTime;
   }
 
@@ -99,7 +100,7 @@ public class Record {
     return rDesc;
   }
 
-  public void setRDesc(String rDesc) {
+  public void setrDesc(String rDesc) {
     this.rDesc = rDesc;
   }
 

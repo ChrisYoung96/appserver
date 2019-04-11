@@ -58,14 +58,14 @@ public class SychronizeDataService implements ISychronizeDataService {
                             result = recordDao.addRecord(r);
                             break;
                         case OptCode.UPDATE:
-                            if (r.getrVersion() > recordDao.findRecordVersion(r.getRId())) {
+                            if (r.getrVersion() > recordDao.findRecordVersion(r.getrId())) {
                                 result = recordDao.updateRecord(r);
                             }else{
                                 datas.add(item);
                             }
                             break;
                         case OptCode.DELETE:
-                            result = recordDao.deleteRecord(item.getData().getRId());
+                            result = recordDao.deleteRecord(item.getData().getrId());
                             break;
                     }
                 }
@@ -92,14 +92,14 @@ public class SychronizeDataService implements ISychronizeDataService {
                             result = billDao.addBill(b);
                             break;
                         case OptCode.UPDATE:
-                            if (b.getbVersion() > billDao.findVersion(b.getBId())){
+                            if (b.getbVersion() > billDao.findVersion(b.getbId())){
                                 result = billDao.updateBill(b);
                             }else{
                                 datas.add(item);
                             }
                             break;
                         case OptCode.DELETE:
-                            result = billDao.deleteBill(item.getData().getBId());
+                            result = billDao.deleteBill(item.getData().getbId());
                             break;
                     }
                 }
@@ -127,7 +127,7 @@ public class SychronizeDataService implements ISychronizeDataService {
                             result = userDiyDao.addNewKind(d);
                             break;
                         case OptCode.UPDATE:
-                            if(d.getdVersion()>userDiyDao.findKindVersion(d.getDId())){
+                            if(d.getdVersion()>userDiyDao.findKindVersion(d.getdId())){
                                 result=userDiyDao.updateKind(d);
                             }else{
                                 datas.add(item);
@@ -135,7 +135,7 @@ public class SychronizeDataService implements ISychronizeDataService {
 
 
                         case OptCode.DELETE:
-                            result = userDiyDao.deleteKind(item.getData().getDId());
+                            result = userDiyDao.deleteKind(item.getData().getdId());
                             break;
                     }
                 }

@@ -1,6 +1,7 @@
 package com.chrisyoung.appserver.domain;
 
 
+import java.io.Serializable;
 import java.sql.Date;
 import java.sql.Timestamp;
 import java.util.UUID;
@@ -8,7 +9,7 @@ import java.util.UUID;
 /**
  * 用户信息实体
  */
-public class AppUser {
+public class AppUser implements Serializable {
 
   private String uId; //用户ID UUID
   private String uName; //用户昵称
@@ -28,65 +29,67 @@ public class AppUser {
     this.uPhoto="";
   }
 
-  public String getUId() {
+
+
+  public String getuId() {
     return uId;
   }
 
-  public void setUId(String uId) {
+  public void setuId(String uId) {
     this.uId = uId;
   }
 
 
-  public String getUName() {
+  public String getuName() {
     return uName;
   }
 
-  public void setUName(String uName) {
+  public void setuName(String uName) {
     this.uName = uName;
   }
 
 
-  public String getUSex() {
+  public String getuSex() {
     return uSex;
   }
 
-  public void setUSex(String uSex) {
+  public void setuSex(String uSex) {
     this.uSex = uSex;
   }
 
 
-  public java.sql.Date getUBirthday() {
+  public Date getuBirthday() {
     return uBirthday;
   }
 
-  public void setUBirthday(java.sql.Date uBirthday) {
+  public void setuBirthday(Date uBirthday) {
     this.uBirthday = uBirthday;
   }
 
 
-  public String getUPhone() {
+  public String getuPhone() {
     return uPhone;
   }
 
-  public void setUPhone(String uPhone) {
+  public void setuPhone(String uPhone) {
     this.uPhone = uPhone;
   }
 
 
-  public String getUMail() {
+  public String getuMail() {
     return uMail;
   }
 
-  public void setUMail(String uMail) {
+  public void setuMail(String uMail) {
     this.uMail = uMail;
   }
 
 
-  public String getUPhoto() {
+  public String getuPhoto() {
     return uPhoto;
   }
 
-  public void setUPhoto(String uPhoto) {
+  public void setuPhoto(String uPhoto) {
     this.uPhoto = uPhoto;
   }
 

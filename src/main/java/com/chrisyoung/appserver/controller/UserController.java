@@ -8,13 +8,18 @@ import com.chrisyoung.appserver.dto.HttpResult;
 import com.chrisyoung.appserver.service.IUploadImageService;
 import com.chrisyoung.appserver.service.impl.UploadImageServie;
 import com.chrisyoung.appserver.service.impl.UserService;
+import com.chrisyoung.appserver.utils.JWTUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
+import org.apache.http.client.methods.HttpHead;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * @program: appserver
@@ -29,11 +34,13 @@ import org.springframework.web.multipart.MultipartFile;
 public class UserController {
     private  final UserService userService;
     private final IUploadImageService uploadImageService;
+    private final HttpServletRequest request;
 
     @Autowired
-    public UserController(UserService userService, UploadImageServie uploadImageService) {
+    public UserController(UserService userService, UploadImageServie uploadImageService, HttpServletRequest request) {
         this.userService = userService;
         this.uploadImageService = uploadImageService;
+        this.request = request;
     }
 
     @ApiOperation(value = "注册新用户")
@@ -66,6 +73,21 @@ public class UserController {
         }
         httpResult.setData(token);
         return httpResult;
+    }
+
+    @RequestMapping(value = "/getuid",method = RequestMethod.GET)
+    public HttpResult getId(@RequestHeader HttpHeaders token){
+        String uId=new JWTUtil().getUserIdFromToken(request.getHeader("Authorization"));
+        AppUser appUser=userService.showUserInfo(uId);
+        HttpResult<AppUser> httpResult=new HttpResult<>();
+        if(token.equals("")) {
+            httpResult.setResultCode(ResultCode.USER_LOGIN_ERROR);
+        }else{
+            httpResult.setResultCode(ResultCode.TEST);
+        }
+        httpResult.setData(appUser);
+        return httpResult;
+
     }
 
     @ApiOperation(value = "修改用户信息")

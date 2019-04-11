@@ -3,13 +3,14 @@ package com.chrisyoung.appserver.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import java.io.Serializable;
 import java.sql.Date;
 import java.util.UUID;
 
 /**
  * 账本实体
  */
-public class Bill {
+public class Bill implements Serializable {
 
   private String bId; //账本ID UUID
   private String uId; //用户ID
@@ -26,38 +27,38 @@ public class Bill {
   }
 
 
-  public String getBId() {
+  public String getbId() {
     return bId;
   }
 
-  public void setBId(String bId) {
+  public void setbId(String bId) {
     this.bId = bId;
   }
 
 
-  public String getUId() {
+  public String getuId() {
     return uId;
   }
 
-  public void setUId(String uId) {
+  public void setuId(String uId) {
     this.uId = uId;
   }
 
 
-  public String getBName() {
+  public String getbName() {
     return bName;
   }
 
-  public void setBName(String bName) {
+  public void setbName(String bName) {
     this.bName = bName;
   }
 
 
-  public String getBDesc() {
+  public String getbDesc() {
     return bDesc;
   }
 
-  public void setBDesc(String bDesc) {
+  public void setbDesc(String bDesc) {
     this.bDesc = bDesc;
   }
 

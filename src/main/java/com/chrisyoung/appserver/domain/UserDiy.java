@@ -1,7 +1,9 @@
 package com.chrisyoung.appserver.domain;
 
 
-public class UserDiy {
+import java.io.Serializable;
+
+public class UserDiy implements Serializable {
 
   private String dId; //自定义收支类型编号
   private String uId; //用户ID
@@ -9,38 +11,38 @@ public class UserDiy {
   private String dKind; //自定义类型
   private int dVersion;//记录版本
 
-  public String getDId() {
+  public String getdId() {
     return dId;
   }
 
-  public void setDId(String dId) {
+  public void setdId(String dId) {
     this.dId = dId;
   }
 
 
-  public String getUId() {
+  public String getuId() {
     return uId;
   }
 
-  public void setUId(String uId) {
+  public void setuId(String uId) {
     this.uId = uId;
   }
 
 
-  public String getDType() {
+  public String getdType() {
     return dType;
   }
 
-  public void setDType(String dType) {
+  public void setdType(String dType) {
     this.dType = dType;
   }
 
 
-  public String getDKind() {
+  public String getdKind() {
     return dKind;
   }
 
-  public void setDKind(String dKind) {
+  public void setdKind(String dKind) {
     this.dKind = dKind;
   }
 
@@ -51,4 +53,7 @@ public class UserDiy {
   public void setdVersion(int dVersion) {
     this.dVersion = dVersion;
   }
+
+
+
 }

@@ -14,6 +14,8 @@ public enum ResultCode {
     /* 成功状态码 */
     SUCCESS(1, "成功"),
 
+    TEST(22,"测试"),
+
     /* 参数错误：101-199 */
     PARAM_IS_INVALID(101, "参数无效"),
     PARAM_IS_BLANK(102, "参数为空"),

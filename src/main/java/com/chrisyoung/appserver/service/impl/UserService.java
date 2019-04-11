@@ -37,7 +37,8 @@ public class UserService implements IUserService {
     public boolean registerUser(UserAuths newAuth) {
         int result=0;
         AppUser newUser=new AppUser();
-        newUser.setUId(newAuth.getUId());
+        newUser.setuId(newAuth.getuId());
+        newUser.setuPhone(newAuth.getIdentify());
         result+=appUserDao.addUser(newUser);
         result+=userAuthsDao.addAuth(newAuth);
         return result==2;
@@ -49,7 +50,7 @@ public class UserService implements IUserService {
         if(auths==null){
             return "";
         }
-        String token=jwtUtil.generateToken(auths.getUId(),auths.getRole());
+        String token=jwtUtil.generateToken(auths.getuId(),auths.getRole());
         return token;
     }
 
