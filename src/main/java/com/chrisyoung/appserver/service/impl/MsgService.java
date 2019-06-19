@@ -24,17 +24,17 @@ public class MsgService implements IMsgService {
     private Map<String,String> paramMap=new HashMap<>();
 
     MsgService(){
-        randomNum=createRandomNum(6);
-        jsonContent="{\"code\":\"" + randomNum + "\"}";
         paramMap.put("msgSign","花匠账本");
         paramMap.put("templateCode","SMS_151233724");
-        paramMap.put("jsonContent",jsonContent);
-
     }
     @Override
     public VerificationCode sendMsg(String phoneNum) {
+        randomNum=createRandomNum(6);
+        jsonContent="{\"code\":\"" + randomNum + "\"}";
+        paramMap.put("jsonContent",jsonContent);
         paramMap.put("phoneNumber",phoneNum);
         SendSmsResponse sendSmsResponse= null;
+
         try {
             sendSmsResponse = AliyunMessageUtil.sendSms(paramMap);
         } catch (ClientException e) {

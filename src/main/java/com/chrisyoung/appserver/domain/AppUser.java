@@ -1,6 +1,8 @@
 package com.chrisyoung.appserver.domain;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.io.Serializable;
 import java.sql.Date;
 import java.sql.Timestamp;
@@ -26,7 +28,7 @@ public class AppUser implements Serializable {
     this.uSex="";
     this.uMail="";
     this.uPhone="";
-    this.uPhoto="";
+    this.uPhoto=" ";
   }
 
 
@@ -57,10 +59,11 @@ public class AppUser implements Serializable {
     this.uSex = uSex;
   }
 
-
+  @JsonFormat(pattern = "yyyy-MM-dd")
   public Date getuBirthday() {
     return uBirthday;
   }
+
 
   public void setuBirthday(Date uBirthday) {
     this.uBirthday = uBirthday;

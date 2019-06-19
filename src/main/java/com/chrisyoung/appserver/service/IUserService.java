@@ -16,6 +16,8 @@ import java.util.LinkedList;
 public interface IUserService {
     boolean registerUser(UserAuths newAuth);
 
+    boolean isExist(String identify,String credentail);
+
     String validateUser(String identify,String credentail);
 
     boolean modifyUserInfo(AppUser user);

@@ -45,6 +45,12 @@ public class UserService implements IUserService {
     }
 
     @Override
+    public boolean isExist(String identify, String credentail) {
+        UserAuths auths=userAuthsDao.findAuth(identify,credentail);
+        return auths != null;
+    }
+
+    @Override
     public String validateUser(String identify, String credentail) {
         UserAuths auths=userAuthsDao.findAuth(identify,credentail);
         if(auths==null){

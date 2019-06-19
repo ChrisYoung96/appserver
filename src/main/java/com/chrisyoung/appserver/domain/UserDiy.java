@@ -10,6 +10,8 @@ public class UserDiy implements Serializable {
   private String dType; //收入或支出
   private String dKind; //自定义类型
   private int dVersion;//记录版本
+  private int delflag;
+
 
   public String getdId() {
     return dId;
@@ -54,6 +56,11 @@ public class UserDiy implements Serializable {
     this.dVersion = dVersion;
   }
 
+  public int getDelflag() {
+    return delflag;
+  }
 
-
+  public void setDelflag(int delflag) {
+    this.delflag = delflag;
+  }
 }

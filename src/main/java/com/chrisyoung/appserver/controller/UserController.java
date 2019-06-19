@@ -47,12 +47,17 @@ public class UserController {
     @ApiImplicitParam(name = "userAuths",value = "用户权限对象",dataType = "UserAuths")
     @RequestMapping(value = "/auth/register",method = RequestMethod.POST)
     public HttpResult register(@RequestBody UserAuths userAuths){
-        Boolean result=userService.registerUser(userAuths);
         HttpResult<String> httpResult=new HttpResult<>();
-        if(result){
-            httpResult.setResultCode(ResultCode.SUCCESS);
+        if(userService.isExist(userAuths.getIdentify(),userAuths.getCredential())){
+            httpResult.setResultCode(ResultCode.USER_HAS_EXISTED);
         }else{
-            httpResult.setResultCode(ResultCode.DATA_IS_WRONG);
+            Boolean result=userService.registerUser(userAuths);
+            if(result){
+                httpResult.setResultCode(ResultCode.SUCCESS);
+            }else{
+                httpResult.setResultCode(ResultCode.DATA_IS_WRONG);
+            }
+
         }
         return httpResult;
     }

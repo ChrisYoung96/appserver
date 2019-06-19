@@ -17,13 +17,13 @@ import java.util.List;
 @Mapper
 @Repository
 public interface RecordDao {
-    @Insert("insert into record values(#{rId},#{bId},#{rType},#{rKind},#{rMoney},#{rWay},#{rTime},#{rDesc},#{rVersion})")
+    @Insert("insert into record values(#{rId},#{bId},#{rType},#{rKind},#{rMoney},#{rWay},#{rTime},#{rDesc},#{rVersion},#{delflag})")
     int addRecord(Record record);
 
-    @Update("update record set r_type=#{rType},r_kind=#{rKind},r_money=#{rMoney},r_way=#{rWay},r_time=#{rTime},r_desc=#{rDesc},r_version=#{rVersion} where r_id=#{rId}")
+    @Update("update record set r_type=#{rType},r_kind=#{rKind},r_money=#{rMoney},r_way=#{rWay},r_time=#{rTime},r_desc=#{rDesc},r_version=#{rVersion},delflag=#{delflag} where r_id=#{rId}")
     int updateRecord(Record record);
 
-    @Select("select * from record where b_id=#{bId} order by r_time")
+    @Select("select * from record where b_id=#{bId} and delflag=0 order by r_time")
     @Results({
             @Result(property = "rId",column = "r_id"),
             @Result(property = "bId",column = "b_id"),
@@ -33,7 +33,8 @@ public interface RecordDao {
             @Result(property = "rWay",column = "r_way"),
             @Result(property = "rTime",column = "r_time"),
             @Result(property = "rDesc",column = "r_desc"),
-            @Result(property = "rVersion",column = "r_version")
+            @Result(property = "rVersion",column = "r_version"),
+            @Result(property = "delflag",column = "delflag")
     })
     List<Record> findAllRecord(@Param("bId") String bId);
 
@@ -47,11 +48,12 @@ public interface RecordDao {
             @Result(property = "rWay",column = "r_way"),
             @Result(property = "rTime",column = "r_time"),
             @Result(property = "rDesc",column = "r_desc"),
-            @Result(property = "rVersion",column = "r_version")
+            @Result(property = "rVersion",column = "r_version"),
+            @Result(property = "delflag",column = "delflag")
     })
     Record findRecordById(@Param("rId") String rid);
 
-    @Select("select * from record where b_id=#{bId} and r_time between #{sTime} and #{eTime} order by r_time")
+    @Select("select * from record where b_id=#{bId} and delflag=0 and r_time between #{sTime} and #{eTime} order by r_time")
     @Results({
             @Result(property = "rId",column = "r_id"),
             @Result(property = "bId",column = "b_id"),
@@ -61,7 +63,8 @@ public interface RecordDao {
             @Result(property = "rWay",column = "r_way"),
             @Result(property = "rTime",column = "r_time"),
             @Result(property = "rDesc",column = "r_desc"),
-            @Result(property = "rVersion",column = "r_version")
+            @Result(property = "rVersion",column = "r_version"),
+            @Result(property = "delflag",column = "delflag")
     })
     List<Record> findRecordsBetweenTime(@Param("bId") String bId, @Param("sTime")Time sTime, @Param("eTime") Time eTime);
 

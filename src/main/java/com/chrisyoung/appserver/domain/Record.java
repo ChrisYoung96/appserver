@@ -20,6 +20,8 @@ public class Record implements Serializable {
   private Timestamp rTime; //交易时间
   private String rDesc; //备注
   private int rVersion;//记录版本
+  private int delflag;
+
 
 
   public Record(){
@@ -90,13 +92,13 @@ public class Record implements Serializable {
     return rTime;
   }
 
-  @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
+ // @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
   public void setrTime(java.sql.Timestamp rTime) {
     this.rTime = rTime;
   }
 
 
-  public String getRDesc() {
+  public String getrDesc() {
     return rDesc;
   }
 
@@ -110,5 +112,13 @@ public class Record implements Serializable {
 
   public void setrVersion(int rVersion) {
     this.rVersion = rVersion;
+  }
+
+  public int getDelflag() {
+    return delflag;
+  }
+
+  public void setDelflag(int delflag) {
+    this.delflag = delflag;
   }
 }

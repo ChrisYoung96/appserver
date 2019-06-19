@@ -19,10 +19,10 @@ public class UserAuthsDaoTest {
     @Test
     public void addAuth() {
         UserAuths auths=new UserAuths();
-        auths.setUId("3d7a33f500ab44c089281b39783072fb");
         auths.setIdentityType(IdentityTypeCode.PHONE);
         auths.setIdentify("123456");
         auths.setCredential("111111");
+        auths.setUaId("3213213213");
         Assert.assertEquals(1,dao.addAuth(auths));
 
     }

@@ -30,7 +30,7 @@ public class UserServiceTest {
     public void registerUser() {
 //        AppUser appUser=new AppUser();
 //        UserAuths userAuths=new UserAuths();
-//        userAuths.setUId(appUser.getUId());
+//        userAuths.setuId(appUser.getuId());
 //        userAuths.setIdentityType(IdentityTypeCode.PHONE);
 //        userAuths.setIdentify("13181891145");
 //        userAuths.setCredential("123456");

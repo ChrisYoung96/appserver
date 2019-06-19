@@ -9,7 +9,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.math.BigDecimal;
-import java.sql.Date;
 import java.sql.Time;
 import java.sql.Timestamp;
 import java.util.List;
@@ -24,20 +23,20 @@ public class RecordDaoTest {
     @Test
     public void addRecord() {
         Record r=new Record();
-        r.setBId("12345678901");
-        r.setRType("支出");
-        r.setRKind("购物");
-        r.setRMoney(BigDecimal.valueOf(17.00));
+        r.setbId("12345678901");
+        r.setrType("支出");
+        r.setrKind("购物");
+        r.setrMoney(BigDecimal.valueOf(17.00));
         r.setrWay("支付宝");
-        r.setRTime(new Timestamp(System.currentTimeMillis()));
-        r.setRDesc("测试");
+        r.setrTime(new Timestamp(System.currentTimeMillis()));
+        r.setrDesc("测试");
         Assert.assertEquals(1,dao.addRecord(r));
     }
 
     @Test
     public void updateRecord() {
         Record r=dao.findRecordById("60ea3021af7a4836bc03752ad637b0aa");
-        r.setRMoney(BigDecimal.valueOf(12.44));
+        r.setrMoney(BigDecimal.valueOf(12.44));
         Assert.assertEquals(1,dao.updateRecord(r));
     }
 
@@ -46,7 +45,7 @@ public class RecordDaoTest {
         List<Record> records=dao.findAllRecord("12345678901");
         for (Record r :
                 records) {
-            System.out.println(r.getRType()+" "+r.getRKind()+" "+r.getRMoney()+" "+r.getRTime().toString());
+            System.out.println(r.getrType()+" "+r.getrKind()+" "+r.getrMoney()+" "+r.getrTime().toString());
         }
     }
 
@@ -61,7 +60,7 @@ public class RecordDaoTest {
         List<Record> rs=dao.findRecordsBetweenTime("9e4b5a7a-a5a9-4438-bb9a-86f23a4264ad",s,e);
         for (Record r:
              rs) {
-            System.out.println(r.getRType()+" "+r.getRKind()+" "+r.getRMoney()+" "+r.getRTime().toString());
+            System.out.println(r.getrType()+" "+r.getrKind()+" "+r.getrMoney()+" "+r.getrTime().toString());
 
         }
     }

@@ -9,6 +9,7 @@ import com.chrisyoung.appserver.service.ISychronizeDataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -61,11 +62,13 @@ public class SychronizeDataService implements ISychronizeDataService {
                             if (r.getrVersion() > recordDao.findRecordVersion(r.getrId())) {
                                 result = recordDao.updateRecord(r);
                             }else{
-                                datas.add(item);
+                                result=0;
                             }
                             break;
                         case OptCode.DELETE:
-                            result = recordDao.deleteRecord(item.getData().getrId());
+                            Record record=item.getData();
+                            record.setDelflag(1);
+                            result = recordDao.updateRecord(record);
                             break;
                     }
                 }
@@ -95,11 +98,13 @@ public class SychronizeDataService implements ISychronizeDataService {
                             if (b.getbVersion() > billDao.findVersion(b.getbId())){
                                 result = billDao.updateBill(b);
                             }else{
-                                datas.add(item);
+                               result=0;
                             }
                             break;
                         case OptCode.DELETE:
-                            result = billDao.deleteBill(item.getData().getbId());
+                            Bill bill=item.getData();
+                            bill.setDelflag(1);
+                            result = billDao.updateBill(bill);
                             break;
                     }
                 }
@@ -130,12 +135,12 @@ public class SychronizeDataService implements ISychronizeDataService {
                             if(d.getdVersion()>userDiyDao.findKindVersion(d.getdId())){
                                 result=userDiyDao.updateKind(d);
                             }else{
-                                datas.add(item);
+                               result=0;
                             }
-
-
                         case OptCode.DELETE:
-                            result = userDiyDao.deleteKind(item.getData().getdId());
+                            UserDiy kind=item.getData();
+                            kind.setDelflag(1);
+                            result = userDiyDao.updateKind(kind);
                             break;
                     }
                 }

@@ -17,7 +17,7 @@ public class SychronizeDataModelTest {
 
         datas.getSychQueue().add(s);
         SychronizeDataItem<Bill> t=datas.getSychQueue().poll();
-        System.out.println(t.getData().getBId());
+        System.out.println(t.getData().getbId());
         Assert.assertEquals(true,datas.getSychQueue().isEmpty());
 
     }

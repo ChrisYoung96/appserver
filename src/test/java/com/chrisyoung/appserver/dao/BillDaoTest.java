@@ -9,9 +9,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
-import java.util.UUID;
-
-import static org.junit.Assert.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
@@ -22,9 +19,9 @@ public class BillDaoTest {
     @Test
     public void addBill() {
         Bill bill=new Bill();
-        bill.setBName("生活");
-        bill.setUId("3d7a33f500ab44c089281b39783072fb");
-        bill.setBDesc("");
+        bill.setbName("生活");
+        bill.setuId("3d7a33f500ab44c089281b39783072fb");
+        bill.setbDesc("");
         Assert.assertEquals(1,dao.addBill(bill));
     }
 
@@ -33,7 +30,7 @@ public class BillDaoTest {
         List<Bill> bills=dao.findAllBills("3d7a33f500ab44c089281b39783072fb");
         for (Bill b :
                 bills) {
-            System.out.println(b.getBName());
+            System.out.println(b.getbName());
 
         }
     }
@@ -41,8 +38,8 @@ public class BillDaoTest {
     @Test
     public void updateBill() {
         Bill bill=dao.findBillById("4a66f148-b367-4c83-96a9-87b79b01f598");
-        System.out.println(bill.getBName());
-        bill.setBDesc("haha");
+        System.out.println(bill.getbName());
+        bill.setbDesc("haha");
         Assert.assertEquals(1,dao.updateBill(bill));
     }
 
